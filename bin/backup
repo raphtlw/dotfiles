@@ -1,5 +1,0 @@
-#!/usr/bin/sh
-
-yadm add -u
-yadm commit -m "backup $(date +%s)"
-yadm push origin master
