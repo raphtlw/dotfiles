@@ -3,3 +3,5 @@
 	name = Raphael Tang
 [credential]
 	helper = store
+[commit]
+	template = /home/raphael/.gitmessage
