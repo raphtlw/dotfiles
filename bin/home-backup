@@ -1,0 +1,7 @@
+#!/usr/bin/sh
+
+echo -e "Backing up the home directory to /dev/sda1"
+echo -e "========================================="
+
+sudo mount /dev/sda1 /mnt
+sudo rsync -avzzh /home "/mnt/Linux/Surface/Backup/$(date +%s).tar"
