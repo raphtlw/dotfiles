@@ -4,4 +4,4 @@ echo -e 'Backing up $HOME, /etc and /var'
 echo -e '==============================='
 
 cd /
-sudo rsync -aAXvPh --delete $HOME /etc /var "/mnt/Backup/$(hostname)"
+sudo rsync -aAXvPh --delete --exclude={"$HOME/.cache","$HOME/.local/share/Trash","$HOME/.thumbnails"} $HOME /etc /var "/mnt/Backup/$(hostname)"
