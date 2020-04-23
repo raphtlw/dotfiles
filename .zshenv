@@ -4,3 +4,4 @@
 export PATH="$PATH:$HOME/bin"
 
 export EDITOR="code"
+export BROWSER="firefox"
