@@ -1,7 +1,0 @@
-#!/usr/bin/sh
-
-echo -e "Backing up the home directory"
-echo -e "============================="
-
-sudo rsync -azzvPh /home "/mnt/Linux/$(hostname)/Backup/$(date +%s).tar" || \
-  echo -e "\e[0;33mPlease mount the drive first\e[0m"

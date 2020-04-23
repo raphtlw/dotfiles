@@ -3,5 +3,5 @@
 echo -e "Backing up the entire system"
 echo -e "============================"
 
-sudo rsync -aAXvPh / --exclude={"/dev/*","/proc/*","/sys/*","/tmp/*","/run/*","/mnt/*","/media/*","/lost+found"} "/mnt/Linux/$(hostname)/Backup/$(date +%s)" || \
-  echo -e "\e[0;33mPlease mount the drive first\e[0m"
+cd /
+sudo rsync -aAXvPh --delete --exclude={"dev/*","proc/*","sys/*","tmp/*","run/*","mnt/*","media/*","lost+found","$HOME/.cache"} / "/mnt/Backup/$(hostname)/"
