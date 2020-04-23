@@ -1,4 +1,5 @@
 #!/usr/bin/sh
 
 yadm pull origin master
+
 pass git pull origin master

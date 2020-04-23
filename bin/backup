@@ -2,3 +2,5 @@
 
 yadm commit -am "backup $(date +%s)"
 yadm push origin master
+
+pass git push origin master
