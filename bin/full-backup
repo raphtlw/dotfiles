@@ -4,7 +4,7 @@ echo -e 'Backing up $HOME and /etc'
 echo -e '========================='
 
 cd /
-sudo rsync -aAXvPh --dry-run --delete \
+sudo rsync -aAXvPh --delete \
 --exclude=/home/*/.cache \
 --exclude=/home/*/.local/share/Trash \
 --exclude=/home/*/.thumbnails \
