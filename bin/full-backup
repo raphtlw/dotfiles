@@ -1,7 +1,7 @@
 #!/usr/bin/sh
 
-echo -e "Backing up the entire system"
-echo -e "============================"
+echo -e 'Backing up $HOME, /etc and /var'
+echo -e '==============================='
 
 cd /
-sudo rsync -aAXvPh --delete --exclude={"dev/*","proc/*","sys/*","tmp/*","run/*","mnt/*","media/*","lost+found","$HOME/.cache","$HOME/.local/share/Trash"} / "/mnt/Backup/$(hostname)/"
+sudo rsync -aAXvPh --delete $HOME /etc /var "/mnt/Backup/$(hostname)"
