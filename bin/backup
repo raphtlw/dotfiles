@@ -1,4 +1,4 @@
 #!/usr/bin/sh
 
-yadm commit -avm "backup $(date +%s)"
+yadm commit -am "backup $(date +%s)"
 yadm push origin master
