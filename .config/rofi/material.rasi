@@ -1,0 +1,34 @@
+configuration {
+    display-drun:    "❱";
+    show-icons:      true;
+}
+
+* {
+    font: "SF Pro Display 12";
+    padding: 3px 5px;
+    background-color: rgba(0,0,0,0);
+    color: #fff;
+    height: 50%;
+    width: 40%;
+}
+
+
+window {
+    background-color: rgba(0,0,0,0.4);
+}
+
+listview {
+    padding: 20px 5px 0px 5px;
+    spacing: 0.2em;
+}
+
+#element {
+    padding: 4px;
+}
+
+#element selected {
+  border-radius: 4px;
+  background-color: rgba(50,50,50,0.5);
+}
+
+/* vim:ft=css 
