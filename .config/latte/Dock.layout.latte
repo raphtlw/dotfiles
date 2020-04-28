@@ -31,17 +31,7 @@ PreloadWeight=18
 
 [Containments][1][Applets][2][Configuration][General]
 isInLatteDock=true
-launchers59=applications:org.kde.dolphin.desktop,applications:visual-studio-code.desktop,applications:spotify.desktop,applications:firefox.desktop
-
-[Containments][1][Applets][4]
-immutability=1
-plugin=org.kde.plasma.simplemenu
-
-[Containments][1][Applets][4][Configuration]
-PreloadWeight=78
-
-[Containments][1][Applets][4][Configuration][General]
-favoritesPortedToKAstats=true
+launchers59=applications:org.kde.dolphin.desktop,applications:visual-studio-code.desktop,applications:spotify.desktop,applications:google-chrome.desktop
 
 [Containments][1][Applets][5]
 immutability=1
@@ -67,7 +57,7 @@ plugin=org.kde.plasma.folder
 wallpaperplugin=
 
 [Containments][1][Applets][7][Configuration]
-PreloadWeight=37
+PreloadWeight=57
 activityId=
 formfactor=0
 immutability=1
@@ -92,6 +82,19 @@ plugin=org.kde.plasma.minimizeall
 [Containments][1][Applets][8][Configuration]
 PreloadWeight=26
 
+[Containments][1][Applets][9]
+immutability=1
+plugin=com.gitlab.jnuutinen.minimalmenu
+
+[Containments][1][Applets][9][Configuration][ConfigDialog]
+DialogHeight=780
+DialogWidth=1040
+
+[Containments][1][Applets][9][Configuration][General]
+favoritesPortedToKAstats=true
+showAtCenter=true
+showFavoritesFirst=true
+
 [Containments][1][ConfigDialog]
 DialogHeight=1297
 DialogWidth=750
@@ -101,7 +104,7 @@ PreloadWeight=18
 
 [Containments][1][General]
 advanced=false
-appletOrder=4;2;5;8;7;6
+appletOrder=9;2;5;8;7;6
 panelShadows=false
 panelSize=100
 panelTransparency=25
@@ -132,3 +135,6 @@ preferredForShortcutsTouched=false
 showInMenu=true
 textColor=fcfcfc
 version=2
+
+[ScreenMapping]
+screenMapping=
