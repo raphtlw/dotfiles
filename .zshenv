@@ -5,4 +5,4 @@ export PATH="$PATH:$HOME/bin"
 export PATH="$PATH:$HOME/.poetry/bin"
 
 export EDITOR="code"
-export BROWSER="firefox"
+export BROWSER="google-chrome-stable"
