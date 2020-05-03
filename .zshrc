@@ -102,4 +102,5 @@ fi
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 alias tm="tmux attach || tmux new"
 alias cp="cp -r"
-alias ls="ls -A --color=auto"
+# alias ls="ls -A --color=auto"
+alias ls="colorls -A"
