@@ -418,4 +418,4 @@ mode "$mode_gaps_outer" {
 }
 
 # Set Wallpaper
-exec_always --no-startup-id feh --bg-fill ~/Desktop/wallpaper*
+exec_always --no-startup-id feh --bg-fill ~/.wallpaper*
