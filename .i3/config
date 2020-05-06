@@ -320,8 +320,8 @@ set_from_resource $term_color15    color15
 
 # Start i3bar to display a workspace bar (plus the system information i3status if available)
 bar {
-	i3bar_command i3bar
-	status_command i3blocks -c ~/.i3/i3blocks.conf
+#	i3bar_command i3bar
+#	status_command i3blocks -c ~/.i3/i3blocks.conf
 	position top
 
 ## please set your primary output first. Example: 'xrandr --output eDP1 --primary'
@@ -348,7 +348,10 @@ bar {
 }
 
 # hide/unhide i3status bar
-bindsym $mod+b bar mode toggle
+# bindsym $mod+b bar mode toggle
+
+# Launch polybar
+exec_always --no-startup-id ~/.config/polybar/launch.sh
 
 # Theme colors
 # class                   border  backgr. text    indic.   child_border
