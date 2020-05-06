@@ -321,6 +321,9 @@ set_from_resource $term_color15    color15
 # Launch polybar
 exec_always --no-startup-id ~/.config/polybar/launch.sh
 
+# Hide polybar keyboard shortcut
+bindsym $mod+b exec --no-startup-id polybar-msg cmd toggle
+
 # Theme colors
 # class                   border  backgr. text    indic.   child_border
   client.focused          #556064 #556064 #80FFF9 #FDF6E3
@@ -390,4 +393,4 @@ mode "$mode_gaps_outer" {
 
 # Set Wallpaper
 exec_always --no-startup-id feh --bg-fill ~/.wallpaper*
-exec --no-startup-id feh-blur
+exec --no-startup-id ~/bin/feh-blur

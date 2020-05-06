@@ -6,4 +6,4 @@ killall -q polybar
 # polybar-msg cmd quit
 
 # Launch bars
-polybar bar1 &
+polybar -r bar1 &
