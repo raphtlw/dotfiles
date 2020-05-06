@@ -393,4 +393,4 @@ mode "$mode_gaps_outer" {
 
 # Set Wallpaper
 exec_always --no-startup-id feh --bg-fill ~/.wallpaper*
-exec --no-startup-id ~/bin/feh-blur
+exec_always --no-startup-id ~/bin/feh-blur
