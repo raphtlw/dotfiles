@@ -89,6 +89,8 @@ else
   export EDITOR="code"
 fi
 
+eval "$(pyenv init -)"
+
 # Compilation flags
 # export ARCHFLAGS="-arch x86_64"
 
