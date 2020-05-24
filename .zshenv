@@ -8,3 +8,9 @@ export PATH="$PATH:$HOME/flutter/bin"
 
 export EDITOR="code"
 export BROWSER="google-chrome-stable"
+
+# The next line updates PATH for the Google Cloud SDK.
+if [ -f '/home/raphael/google-cloud-sdk/path.zsh.inc' ]; then . '/home/raphael/google-cloud-sdk/path.zsh.inc'; fi
+
+# The next line enables shell command completion for gcloud.
+if [ -f '/home/raphael/google-cloud-sdk/completion.zsh.inc' ]; then . '/home/raphael/google-cloud-sdk/completion.zsh.inc'; fi
