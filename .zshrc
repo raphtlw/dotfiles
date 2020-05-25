@@ -12,6 +12,10 @@ eval "$(pyenv init -)"
 # Aliases
 alias tm="tmux attach || tmux new"
 alias ls="exa"
+alias lsa="ls -a"
+alias l="ls -lah"
+alias la="ls -lah"
+alias ll="ls -lah"
 
 # Starship
 eval "$(starship init zsh)"
