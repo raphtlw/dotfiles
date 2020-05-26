@@ -7,8 +7,6 @@ else
   export EDITOR="code"
 fi
 
-eval "$(pyenv init -)"
-
 # Aliases
 alias tm="tmux attach || tmux new"
 alias ls="exa"
