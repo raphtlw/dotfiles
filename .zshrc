@@ -17,3 +17,6 @@ alias ll="ls -lah"
 
 # Starship
 eval "$(starship init zsh)"
+
+# Disable Ctrl+s in terminal
+stty -ixon
