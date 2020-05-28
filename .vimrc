@@ -16,7 +16,7 @@ Plug 'preservim/nerdtree'
 Plug 'mengelbrecht/lightline-bufferline'
 Plug 'dart-lang/dart-vim-plugin'
 " Theme
-Plug 'dracula/vim', {'as': 'dracula'}
+Plug 'ntk148v/vim-horizon'
 
 call plug#end()
 
@@ -50,10 +50,10 @@ nmap <Leader>7 <Plug>lightline#bufferline#go(7)
 nmap <Leader>8 <Plug>lightline#bufferline#go(8)
 nmap <Leader>9 <Plug>lightline#bufferline#go(9)
 nmap <Leader>0 <Plug>lightline#bufferline#go(10)
-nmap <Leader>w :bd<CR>
+nmap <Leader>q :bd<CR>
 
 " Plugin Configurations
-let g:lightline                  = {'colorscheme': 'darcula'}
+let g:lightline                  = {}
 let g:lightline.tabline          = {'left': [['buffers']], 'right': [['close']]}
 let g:lightline.component_expand = {'buffers': 'lightline#bufferline#buffers'}
 let g:lightline.component_type   = {'buffers': 'tabsel'}
@@ -64,7 +64,8 @@ let NERDTreeShowHidden = 1
 let g:lsc_auto_map = v:true
 
 " Color scheme
-color dracula
+colorscheme horizon
+let g:lightline.colorscheme = 'horizon'
 
 " Automatic commands
 autocmd BufWritePost,TextChanged,TextChangedI * call lightline#update()
@@ -201,6 +202,9 @@ command! -nargs=? Fold :call     CocAction('fold', <f-args>)
 
 " Add `:OR` command for organize imports of the current buffer.
 command! -nargs=0 OR   :call     CocAction('runCommand', 'editor.action.organizeImport')
+
+" Add `Prettier command to format current buffer`
+command! -nargs=0 Prettier :CocCommand prettier.formatFile
 
 " Add (Neo)Vim's native statusline support.
 " NOTE: Please see `:h coc-status` for integrations with external plugins that
