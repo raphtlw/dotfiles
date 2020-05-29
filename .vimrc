@@ -14,6 +14,7 @@ Plug 'jiangmiao/auto-pairs'
 Plug 'itchyny/lightline.vim'
 Plug 'preservim/nerdtree'
 Plug 'mengelbrecht/lightline-bufferline'
+Plug 'ryanoasis/vim-devicons'
 Plug 'dart-lang/dart-vim-plugin'
 " Theme
 Plug 'ntk148v/vim-horizon'
@@ -38,8 +39,8 @@ set termguicolors
 set nowrap
 
 " Keybindings
-map <C-n> :NERDTreeToggle<CR>
-map <C-s> :w<CR>
+nmap <C-n> :NERDTreeToggle<CR>
+nmap <C-s> :w<CR>
 nmap <Leader>1 <Plug>lightline#bufferline#go(1)
 nmap <Leader>2 <Plug>lightline#bufferline#go(2)
 nmap <Leader>3 <Plug>lightline#bufferline#go(3)
