@@ -16,6 +16,7 @@ Plug 'preservim/nerdtree'
 Plug 'mengelbrecht/lightline-bufferline'
 Plug 'ryanoasis/vim-devicons'
 Plug 'dart-lang/dart-vim-plugin'
+Plug 'evanleck/vim-svelte'
 " Theme
 Plug 'ntk148v/vim-horizon'
 
