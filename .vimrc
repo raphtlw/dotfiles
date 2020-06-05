@@ -18,6 +18,7 @@ Plug 'ryanoasis/vim-devicons'
 Plug 'junegunn/fzf', {'do': {-> fzf#install()}}
 Plug 'junegunn/fzf.vim'
 Plug 'dart-lang/dart-vim-plugin'
+Plug 'evanleck/vim-svelte'
 " Theme
 Plug 'ntk148v/vim-horizon'
 
