@@ -15,6 +15,8 @@ Plug 'itchyny/lightline.vim'
 Plug 'preservim/nerdtree'
 Plug 'mengelbrecht/lightline-bufferline'
 Plug 'ryanoasis/vim-devicons'
+Plug 'junegunn/fzf', {'do': {-> fzf#install()}}
+Plug 'junegunn/fzf.vim'
 Plug 'dart-lang/dart-vim-plugin'
 " Theme
 Plug 'ntk148v/vim-horizon'
@@ -51,7 +53,7 @@ nmap <Leader>7 <Plug>lightline#bufferline#go(7)
 nmap <Leader>8 <Plug>lightline#bufferline#go(8)
 nmap <Leader>9 <Plug>lightline#bufferline#go(9)
 nmap <Leader>0 <Plug>lightline#bufferline#go(10)
-nmap <Leader>q :bd<CR>
+nmap <Leader>w :bd<CR>
 
 " Plugin Configurations
 let g:lightline                  = {}
