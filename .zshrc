@@ -14,7 +14,8 @@ autoload -Uz compinit && compinit
 zmodload -i zsh/complist
 zstyle ':completion:*' menu select
 zstyle ':completion:*' group-name ''
-ZSH_AUTOSUGGEST_HIGHLIGHT_STYLE='fg=247'
+ZSH_AUTOSUGGEST_HIGHLIGHT_STYLE='fg=240'
+ZSH_AUTOSUGGEST_USE_ASYNC=true
 
 # History for autosuggestions
 HISTFILE=$HOME/.zsh_history
@@ -64,4 +65,11 @@ zinit light-mode for \
 zinit wait lucid atload'_zsh_autosuggest_start' light-mode for \
   zsh-users/zsh-autosuggestions
 zinit wait lucid for \
-  zsh-users/zsh-syntax-highlighting
+  zsh-users/zsh-syntax-highlighting \
+  zsh-users/zsh-completions
+
+# Blur
+if [[ $(ps --no-header -p $PPID -o comm) =~ '^yakuake|kitty$' ]]; then
+  for wid in $(xdotool search --pid $PPID); do
+    xprop -f _KDE_NET_WM_BLUR_BEHIND_REGION 32c -set _KDE_NET_WM_BLUR_BEHIND_REGION 0 -id $wid; done
+fi
