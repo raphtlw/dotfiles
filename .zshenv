@@ -9,7 +9,7 @@ export PATH="$PATH:$DENO_INSTALL/bin"
 export PATH="$PATH:$HOME/.cargo/bin"
 
 export EDITOR="code"
-export BROWSER="firefox"
+export BROWSER="chrome"
 export DENO_INSTALL="/home/raphael/.deno"
 
 # The next line updates PATH for the Google Cloud SDK.

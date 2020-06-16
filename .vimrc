@@ -13,6 +13,7 @@ Plug 'neoclide/coc.nvim', {'branch': 'release'}
 Plug 'jiangmiao/auto-pairs'
 Plug 'itchyny/lightline.vim'
 Plug 'preservim/nerdtree'
+Plug 'preservim/nerdcommenter'
 Plug 'mengelbrecht/lightline-bufferline'
 Plug 'ryanoasis/vim-devicons'
 Plug 'junegunn/fzf', {'do': {-> fzf#install()}}
@@ -40,6 +41,7 @@ set showtabline=2
 set noshowmode
 set termguicolors
 set nowrap
+filetype plugin on
 
 " Keybindings
 nmap <C-n> :NERDTreeToggle<CR>
