@@ -7,6 +7,7 @@ export PATH="$PATH:$(ruby -e 'puts Gem.user_dir')/bin"
 export PATH="$PATH:$HOME/flutter/bin"
 export PATH="$PATH:$DENO_INSTALL/bin"
 export PATH="$PATH:$HOME/.cargo/bin"
+export PATH="$PATH:$HOME/.npm-global/bin"
 
 export EDITOR="code"
 export BROWSER="chrome"
