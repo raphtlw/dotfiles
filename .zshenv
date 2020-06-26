@@ -10,7 +10,7 @@ export PATH="$PATH:$HOME/.cargo/bin"
 export PATH="$PATH:$HOME/.npm-global/bin"
 
 export EDITOR="code"
-export BROWSER="chrome"
+export BROWSER="google-chrome-stable"
 export DENO_INSTALL="/home/raphael/.deno"
 
 # The next line updates PATH for the Google Cloud SDK.
