@@ -8,10 +8,12 @@ export PATH="$PATH:$HOME/flutter/bin"
 export PATH="$PATH:$DENO_INSTALL/bin"
 export PATH="$PATH:$HOME/.cargo/bin"
 export PATH="$PATH:$HOME/.npm-global/bin"
+export PATH="$PATH:$PYENV_ROOT/bin"
 
 export EDITOR="code"
 export BROWSER="google-chrome-stable"
 export DENO_INSTALL="/home/raphael/.deno"
+export PYENV_ROOT="$HOME/.pyenv"
 
 # The next line updates PATH for the Google Cloud SDK.
 if [ -f '/home/raphael/google-cloud-sdk/path.zsh.inc' ]; then . '/home/raphael/google-cloud-sdk/path.zsh.inc'; fi

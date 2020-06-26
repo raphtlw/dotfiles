@@ -34,14 +34,20 @@ set smartindent
 set tabstop=2
 set number
 set mouse=a
+set ttymouse=sgr
 set ignorecase
 set smartcase
 set laststatus=2
 set showtabline=2
 set noshowmode
-set termguicolors
 set nowrap
 filetype plugin on
+
+" color stuff
+set termguicolors
+colorscheme horizon
+execute "set t_8f=\e[38;2;%lu;%lu;%lum"
+execute "set t_8b=\e[48;2;%lu;%lu;%lum"
 
 " Keybindings
 nmap <C-n> :NERDTreeToggle<CR>
@@ -60,6 +66,7 @@ nmap <Leader>w :bd<CR>
 
 " Plugin Configurations
 let g:lightline                  = {}
+let g:lightline.colorscheme = 'horizon'
 let g:lightline.tabline          = {'left': [['buffers']], 'right': [['close']]}
 let g:lightline.component_expand = {'buffers': 'lightline#bufferline#buffers'}
 let g:lightline.component_type   = {'buffers': 'tabsel'}
@@ -68,10 +75,6 @@ let g:lightline#bufferline#shorten_path = 0
 let g:lightline#bufferline#unnamed      = '[No Name]'
 let NERDTreeShowHidden = 1
 let g:lsc_auto_map = v:true
-
-" Color scheme
-colorscheme horizon
-let g:lightline.colorscheme = 'horizon'
 
 " Automatic commands
 autocmd BufWritePost,TextChanged,TextChangedI * call lightline#update()
