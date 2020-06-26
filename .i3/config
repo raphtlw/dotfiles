@@ -27,7 +27,7 @@ font xft:SF Pro Display 10
 floating_modifier $mod
 
 # start a terminal
-bindsym $mod+Return exec kitty
+bindsym $mod+Return exec alacritty
 
 # kill focused window
 bindsym $mod+Shift+q kill
@@ -58,7 +58,7 @@ bindsym $mod+Ctrl+m exec pavucontrol
 bindsym $mod+Ctrl+b exec terminal -e 'bmenu'
 bindsym $mod+F2 exec google-chrome-stable
 # bindsym $mod+F3 exec pcmanfm
-bindsym $mod+F3 exec kitty ranger
+bindsym $mod+F3 exec alacritty --command ranger
 bindsym $mod+Shift+F3 exec pcmanfm_pkexec
 bindsym $mod+F5 exec terminal -e 'mocp'
 bindsym $mod+Ctrl+c exec --no-startup-id "pkill compton; compton; ~/bin/feh-blur"
