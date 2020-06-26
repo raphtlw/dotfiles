@@ -5,3 +5,5 @@
 	helper = store
 [alias]
 	yolo = !git add -A && git commit -m \"$(curl --silent --fail http://whatthecommit.com/index.txt)\"
+[pull]
+	rebase = false
