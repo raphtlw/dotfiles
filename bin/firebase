@@ -1,0 +1,16 @@
+#!/usr/bin/env sh
+
+if [ "$1" == "start" ]; then
+  gcloud compute instances start minecraft --project raphael-vps
+  echo "Instance started 🚀"
+elif [ "$1" == "stop" ]; then
+  gcloud compute instances stop minecraft --project raphael-vps
+  echo "Instance stopped 👍"
+elif [ "$1" == "shell" ]; then
+  TERM=xterm-256color gcloud compute ssh minecraft --project raphael-vps
+elif [ "$1" == "status" ]; then
+  gcloud compute instances list --filter="name=('minecraft')" --project raphael-vps
+else
+  echo "USAGE: $(basename $0) [start|stop]"
+fi
+
