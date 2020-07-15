@@ -51,7 +51,6 @@ execute "set t_8b=\e[48;2;%lu;%lu;%lum"
 
 " Keybindings
 nmap <C-n> :NERDTreeToggle<CR>
-nmap <C-s> :w<CR>
 nmap <Leader>1 <Plug>lightline#bufferline#go(1)
 nmap <Leader>2 <Plug>lightline#bufferline#go(2)
 nmap <Leader>3 <Plug>lightline#bufferline#go(3)
@@ -63,6 +62,9 @@ nmap <Leader>8 <Plug>lightline#bufferline#go(8)
 nmap <Leader>9 <Plug>lightline#bufferline#go(9)
 nmap <Leader>0 <Plug>lightline#bufferline#go(10)
 nmap <Leader>w :bd<CR>
+nnoremap <c-s> :w<CR>
+inoremap <c-s> <Esc> :w<CR>
+vnoremap <c-s> <Esc> :w<CR>
 
 " Plugin Configurations
 let g:lightline                  = {}
