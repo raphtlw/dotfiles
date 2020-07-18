@@ -1,0 +1,15 @@
+#!/usr/bin/env bash
+
+if [ "$1" == "start"  ]; then
+  gcloud compute instances start writer --project igottech
+  echo "Instance started 🚀"
+elif [ "$1" == "stop"  ]; then
+  gcloud compute instances stop writer --project igottech
+  echo "Instance stopped 👍"
+elif [ "$1" == "shell"  ]; then
+  TERM=xterm-256color gcloud compute ssh writer --project igottech
+elif [ "$1" == "status"  ]; then
+  gcloud compute instances list --filter="name=('writer')" --project igottech
+else
+  echo "USAGE: $(basename $0) [start|stop|status]"
+fi
