@@ -11,5 +11,5 @@ elif [ "$1" == "shell"  ]; then
 elif [ "$1" == "status"  ]; then
   gcloud compute instances list --filter="name=('writer')" --project igottech
 else
-  echo "USAGE: $(basename $0) [start|stop|status]"
+  echo "USAGE: $(basename $0) [start|stop|shell|status]"
 fi
