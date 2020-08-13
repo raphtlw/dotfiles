@@ -1375,14 +1375,8 @@ Spicetify.getAudioData = (uri) => {
     });
 }
 
-Spicetify.getAblumArtColors = (uri) => {
+Spicetify.colorExtractor = (uri) => {
     return new Promise((resolve, reject) => {
-        uri = uri || Spicetify.Player.data.track.uri;
-        if (Spicetify.URI.isTrack(uri)) {
-            reject("URI is invalid.");
-            return;
-        }
-
         Spicetify.CosmosAPI.resolver.get(
             `hm://colorextractor/v1/extract-presets?uri=${uri}&format=json`,
             (error, payload) => {
@@ -1404,6 +1398,11 @@ Spicetify.getAblumArtColors = (uri) => {
             }
         );
     });
+}
+
+Spicetify.getAblumArtColors = async (uri) => {
+    uri = uri || Spicetify.Player.data.track.metadata.album_uri;
+    return await Spicetify.colorExtractor(uri);
 }
 
 Spicetify.Menu = (function() {
@@ -1509,8 +1508,12 @@ Spicetify.ContextMenu = (function () {
             }
         }
         set icon(name) {
+            if (!name) {
+                this._icon = null;
+                return;
+            }
             if (!Item.iconList.includes(name)) {
-                throw "Spicetify.ContextMenu.Item: icon is not a valid icon name.";
+                throw `Spicetify.ContextMenu.Item: "${name}" is not a valid icon name.`;
             }
             this._icon = {
                 type: "spoticon",
@@ -1536,7 +1539,7 @@ Spicetify.ContextMenu = (function () {
         }
         set name(text) {
             if (typeof text !== "string") {
-                throw "Spicetify.ContextMenu.Item.setName: name is not a string";
+                throw "Spicetify.ContextMenu.SubMenu: name is not a string";
             }
             this._name = text;
         }
@@ -1553,12 +1556,16 @@ Spicetify.ContextMenu = (function () {
             if (typeof func == "function") {
                 this._shouldAdd = func.bind(this);
             } else {
-                throw "Spicetify.ContextMenu.Item: shouldAdd is not a function";
+                throw "Spicetify.ContextMenu.SubMenu: shouldAdd is not a function";
             }
         }
         set icon(name) {
-            if (!SubMenu.iconList.includes(name)) {
-                throw "Spicetify.ContextMenu.Item: icon is not a valid icon name.";
+            if (!name) {
+                this._icon = null;
+                return;
+            }
+            if (!SubMenu.iconList.includes()) {
+                throw `Spicetify.ContextMenu.SubMenu: "${name}" is not a valid icon name.`;
             }
             this._icon = {
                 type: "spoticon",

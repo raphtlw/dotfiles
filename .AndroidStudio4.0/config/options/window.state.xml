@@ -1,0 +1,32 @@
+<application>
+  <component name="DimensionService">
+    <location key="WELCOME_SCREEN.0.0.2256.1504@144dpi" x="1285" y="450" />
+  </component>
+  <component name="WindowManager">
+    <frame x="376" y="241" width="1400" height="1000" />
+    <layout>
+      <window_info content_ui="combo" id="Project" order="0" weight="0.25" />
+      <window_info id="Structure" order="1" weight="0.25" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" />
+      <window_info anchor="bottom" id="Run" order="2" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+    </layout>
+  </component>
+  <component name="WindowStateApplicationService">
+    <state x="805" y="297" key="FileChooserDialogImpl" timestamp="1597150838077">
+      <screen x="0" y="30" width="2256" height="1474" />
+    </state>
+    <state x="805" y="297" key="FileChooserDialogImpl/0.30.2256.1474" timestamp="1597150838077" />
+    <state x="1127" y="653" key="WELCOME_SCREEN" timestamp="1597147215312">
+      <screen x="0" y="30" width="2256" height="1474" />
+    </state>
+    <state x="1127" y="653" key="WELCOME_SCREEN/0.30.2256.1474" timestamp="1597147215312" />
+  </component>
+</application>
