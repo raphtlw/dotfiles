@@ -5271,6 +5271,19 @@
         </option>
       </plugins>
     </entry>
+    <entry key="*.mps">
+      <plugins>
+        <option name="myPlugins">
+          <set>
+            <plugin>
+              <option name="myPluginId" value="generatedsoft.mps.xmlph" />
+              <option name="myPluginName" />
+              <option name="myBundled" value="false" />
+            </plugin>
+          </set>
+        </option>
+      </plugins>
+    </entry>
     <entry key="*.mq4">
       <plugins>
         <option name="myPlugins">

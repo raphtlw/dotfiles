@@ -4,21 +4,60 @@
       <map>
         <entry key="$USER_HOME$/Desktop/zorin/app">
           <value>
-            <RecentProjectMetaInfo opened="true" projectWorkspaceId="1fxDW8M8aUlxHg1LPUcZ7ZS8UTE">
+            <RecentProjectMetaInfo projectWorkspaceId="1fxDW8M8aUlxHg1LPUcZ7ZS8UTE">
               <option name="binFolder" value="$APPLICATION_HOME_DIR$/bin" />
               <option name="build" value="AI-193.6911.18.40.6626763" />
-              <option name="buildTimestamp" value="1593052926151" />
-              <frame x="390" y="225" width="1400" height="1000" extendedState="6" />
+              <option name="buildTimestamp" value="1593052967761" />
+              <frame x="502" y="341" width="1380" height="940" />
               <option name="productionCode" value="AI" />
-              <option name="projectOpenTimestamp" value="1597302971085" />
+              <option name="projectOpenTimestamp" value="1597499514175" />
+            </RecentProjectMetaInfo>
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/Desktop/TrueTweet/android">
+          <value>
+            <RecentProjectMetaInfo projectWorkspaceId="1g8zjgcYUNM95mVbSHNCfAzqtPu">
+              <option name="binFolder" value="$APPLICATION_HOME_DIR$/bin" />
+              <option name="build" value="AI-193.6911.18.40.6626763" />
+              <option name="buildTimestamp" value="1593052931728" />
+              <frame x="306" y="301" width="1380" height="940" extendedState="6" />
+              <option name="productionCode" value="AI" />
+              <option name="projectOpenTimestamp" value="1597909818907" />
+            </RecentProjectMetaInfo>
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/Desktop/Zorin/app">
+          <value>
+            <RecentProjectMetaInfo projectWorkspaceId="1fxDW8M8aUlxHg1LPUcZ7ZS8UTE">
+              <option name="binFolder" value="$APPLICATION_HOME_DIR$/bin" />
+              <option name="build" value="AI-193.6911.18.40.6626763" />
+              <option name="buildTimestamp" value="1593052969625" />
+              <frame x="431" y="330" width="1380" height="940" />
+              <option name="productionCode" value="AI" />
+              <option name="projectOpenTimestamp" value="1598014630295" />
+            </RecentProjectMetaInfo>
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/Desktop/Newstry/android">
+          <value>
+            <RecentProjectMetaInfo opened="true" projectWorkspaceId="1gPSFXtdw6UGZ2G3LQOUUyIcp4a">
+              <option name="binFolder" value="$APPLICATION_HOME_DIR$/bin" />
+              <option name="build" value="AI-193.6911.18.40.6626763" />
+              <option name="buildTimestamp" value="1593052968531" />
+              <frame x="458" y="293" width="1370" height="876" extendedState="6" />
+              <option name="productionCode" value="AI" />
+              <option name="projectOpenTimestamp" value="1598103295728" />
             </RecentProjectMetaInfo>
           </value>
         </entry>
       </map>
     </option>
-    <option name="lastProjectLocation" value="$USER_HOME$/Desktop/zorin" />
+    <option name="lastProjectLocation" value="$USER_HOME$/Desktop/Newstry" />
     <option name="recentPaths">
       <list>
+        <option value="$USER_HOME$/Desktop/Newstry/android" />
+        <option value="$USER_HOME$/Desktop/Zorin/app" />
+        <option value="$USER_HOME$/Desktop/TrueTweet/android" />
         <option value="$USER_HOME$/Desktop/zorin/app" />
       </list>
     </option>

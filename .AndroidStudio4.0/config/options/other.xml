@@ -6,6 +6,32 @@
   </component>
   <component name="PropertiesComponent">
     <property name="ATTACHED_TOOL_WINDOW.DEFAULT.DESIGN_FILES_PREVIEW_EDITOR.TOOL_ORDER" value="" />
+    <property name="ATTACHED_TOOL_WINDOW.DEFAULT.Layout Inspector.PROPERTIES.AUTO_HIDE" value="false" />
+    <property name="ATTACHED_TOOL_WINDOW.DEFAULT.Layout Inspector.PROPERTIES.LEFT" value="false" />
+    <property name="ATTACHED_TOOL_WINDOW.DEFAULT.Layout Inspector.PROPERTIES.MINIMIZED" value="false" />
+    <property name="ATTACHED_TOOL_WINDOW.DEFAULT.Layout Inspector.PROPERTIES.SPLIT" value="false" />
+    <property name="ATTACHED_TOOL_WINDOW.DEFAULT.Layout Inspector.TOOL_ORDER" value="TREE,PROPERTIES" />
+    <property name="ATTACHED_TOOL_WINDOW.DEFAULT.Layout Inspector.TREE.AUTO_HIDE" value="false" />
+    <property name="ATTACHED_TOOL_WINDOW.DEFAULT.Layout Inspector.TREE.LEFT" value="true" />
+    <property name="ATTACHED_TOOL_WINDOW.DEFAULT.Layout Inspector.TREE.MINIMIZED" value="false" />
+    <property name="ATTACHED_TOOL_WINDOW.DEFAULT.Layout Inspector.TREE.SPLIT" value="false" />
+    <property name="ATTACHED_TOOL_WINDOW.DEFAULT.NAV_EDITOR.PROPERTIES.FULL.AUTO_HIDE" value="false" />
+    <property name="ATTACHED_TOOL_WINDOW.DEFAULT.NAV_EDITOR.PROPERTIES.FULL.LEFT" value="false" />
+    <property name="ATTACHED_TOOL_WINDOW.DEFAULT.NAV_EDITOR.PROPERTIES.FULL.MINIMIZED" value="false" />
+    <property name="ATTACHED_TOOL_WINDOW.DEFAULT.NAV_EDITOR.PROPERTIES.FULL.SPLIT" value="false" />
+    <property name="ATTACHED_TOOL_WINDOW.DEFAULT.NAV_EDITOR.PROPERTIES.SPLIT.AUTO_HIDE" value="false" />
+    <property name="ATTACHED_TOOL_WINDOW.DEFAULT.NAV_EDITOR.PROPERTIES.SPLIT.LEFT" value="false" />
+    <property name="ATTACHED_TOOL_WINDOW.DEFAULT.NAV_EDITOR.PROPERTIES.SPLIT.MINIMIZED" value="true" />
+    <property name="ATTACHED_TOOL_WINDOW.DEFAULT.NAV_EDITOR.PROPERTIES.SPLIT.SPLIT" value="false" />
+    <property name="ATTACHED_TOOL_WINDOW.DEFAULT.NAV_EDITOR.TOOL_ORDER" value="PROPERTIES,structure" />
+    <property name="ATTACHED_TOOL_WINDOW.DEFAULT.NAV_EDITOR.structure.FULL.AUTO_HIDE" value="false" />
+    <property name="ATTACHED_TOOL_WINDOW.DEFAULT.NAV_EDITOR.structure.FULL.LEFT" value="true" />
+    <property name="ATTACHED_TOOL_WINDOW.DEFAULT.NAV_EDITOR.structure.FULL.MINIMIZED" value="false" />
+    <property name="ATTACHED_TOOL_WINDOW.DEFAULT.NAV_EDITOR.structure.FULL.SPLIT" value="false" />
+    <property name="ATTACHED_TOOL_WINDOW.DEFAULT.NAV_EDITOR.structure.SPLIT.AUTO_HIDE" value="false" />
+    <property name="ATTACHED_TOOL_WINDOW.DEFAULT.NAV_EDITOR.structure.SPLIT.LEFT" value="true" />
+    <property name="ATTACHED_TOOL_WINDOW.DEFAULT.NAV_EDITOR.structure.SPLIT.MINIMIZED" value="true" />
+    <property name="ATTACHED_TOOL_WINDOW.DEFAULT.NAV_EDITOR.structure.SPLIT.SPLIT" value="false" />
     <property name="ATTACHED_TOOL_WINDOW.DEFAULT.NELE_EDITOR.COMPONENT_TREE.DEACTIVATED.AUTO_HIDE" value="false" />
     <property name="ATTACHED_TOOL_WINDOW.DEFAULT.NELE_EDITOR.COMPONENT_TREE.DEACTIVATED.LEFT" value="true" />
     <property name="ATTACHED_TOOL_WINDOW.DEFAULT.NELE_EDITOR.COMPONENT_TREE.DEACTIVATED.MINIMIZED" value="false" />
@@ -43,7 +69,15 @@
     <property name="ATTACHED_TOOL_WINDOW.DEFAULT.NELE_EDITOR.PROPERTIES.SPLIT.MINIMIZED" value="true" />
     <property name="ATTACHED_TOOL_WINDOW.DEFAULT.NELE_EDITOR.PROPERTIES.SPLIT.SPLIT" value="false" />
     <property name="ATTACHED_TOOL_WINDOW.DEFAULT.NELE_EDITOR.TOOL_ORDER" value="PALETTE,PROPERTIES,COMPONENT_TREE" />
+    <property name="ATTACHED_TOOL_WINDOW.DEFAULT.Visualization.TOOL_ORDER" value="" />
     <property name="ATTACHED_TOOL_WINDOW.DESIGN_FILES_PREVIEW_EDITOR.TOOL_ORDER" value="" />
+    <property name="ATTACHED_TOOL_WINDOW.Layout Inspector.TOOL_ORDER" value="TREE,PROPERTIES" />
+    <property name="ATTACHED_TOOL_WINDOW.Layout Inspector.TREE.LEFT" value="true" />
+    <property name="ATTACHED_TOOL_WINDOW.NAV_EDITOR.PROPERTIES.SPLIT.MINIMIZED" value="true" />
+    <property name="ATTACHED_TOOL_WINDOW.NAV_EDITOR.TOOL_ORDER" value="PROPERTIES,structure" />
+    <property name="ATTACHED_TOOL_WINDOW.NAV_EDITOR.structure.FULL.LEFT" value="true" />
+    <property name="ATTACHED_TOOL_WINDOW.NAV_EDITOR.structure.SPLIT.LEFT" value="true" />
+    <property name="ATTACHED_TOOL_WINDOW.NAV_EDITOR.structure.SPLIT.MINIMIZED" value="true" />
     <property name="ATTACHED_TOOL_WINDOW.NELE_EDITOR.COMPONENT_TREE.DEACTIVATED.LEFT" value="true" />
     <property name="ATTACHED_TOOL_WINDOW.NELE_EDITOR.COMPONENT_TREE.DEACTIVATED.SPLIT" value="true" />
     <property name="ATTACHED_TOOL_WINDOW.NELE_EDITOR.COMPONENT_TREE.FULL.LEFT" value="true" />
@@ -58,45 +92,81 @@
     <property name="ATTACHED_TOOL_WINDOW.NELE_EDITOR.PALETTE.SPLIT.MINIMIZED" value="true" />
     <property name="ATTACHED_TOOL_WINDOW.NELE_EDITOR.PROPERTIES.SPLIT.MINIMIZED" value="true" />
     <property name="ATTACHED_TOOL_WINDOW.NELE_EDITOR.RIGHT.UNSCALED.WIDTH" value="371" />
-    <property name="ATTACHED_TOOL_WINDOW.NELE_EDITOR.TEXT_SEARCH_HISTORY" value="margintop&#10;constraint top_totopof&#10;constraint&#10;marginstart&#10;marginleft" />
+    <property name="ATTACHED_TOOL_WINDOW.NELE_EDITOR.TEXT_SEARCH_HISTORY" value="theme&#10;margintop&#10;constraint top_totopof&#10;constraint&#10;marginstart" />
     <property name="ATTACHED_TOOL_WINDOW.NELE_EDITOR.TOOL_ORDER" value="PALETTE,PROPERTIES,COMPONENT_TREE" />
+    <property name="ATTACHED_TOOL_WINDOW.Visualization.TOOL_ORDER" value="" />
     <property name="AndroidInitConfigurator.V1" value="true" />
     <property name="AndroidInitConfigurator.V3" value="true" />
     <property name="AndroidInitConfigurator.V5" value="true" />
+    <property name="CommitChangeListDialog.DETAILS_SPLITTER_PROPORTION_2" value="0.6294466" />
     <property name="ConstraintLayoutPreferenceShowMargins" value="true" />
     <property name="Darcula.SavedEditorTheme" value="_@user_Darcula" />
     <property name="Default.SavedEditorTheme" value="_@user_Default" />
+    <property name="ExpandBeforeRunStepsPanel" value="true" />
+    <property name="ExpandRunDashboardTypesPanel" value="false" />
     <property name="FileTemplates.SelectedTemplate" value="HTML File" />
-    <property name="InstalledPluginsSearchHistory" value="theme&#10;them&#10;th&#10;macos&#10;d" />
-    <property name="MarketplacePluginsSearchHistory" value="macos&#10;drac&#10;dr&#10;d&#10;snazz" />
+    <property name="InstalledPluginsSearchHistory" value="vuesion&#10;gradianto&#10;gradiant&#10;gradian&#10;gradia" />
+    <property name="LayoutCode.codeCleanup" value="true" />
+    <property name="LayoutCode.optimizeImports" value="false" />
+    <property name="LayoutCode.rearrangeEntriesXML" value="true" />
+    <property name="MarketplacePluginsSearchHistory" value="vuesion&#10;v&#10;carbon&#10;c&#10;nord" />
     <property name="MobileminApi" value="23" />
     <property name="NlScreenMode" value="RENDER" />
+    <property name="PROJECT_STRUCTURE_NOTIFICATION_LAST_HIDDEN_TIMESTAMP" value="1597388894990" />
+    <property name="PluginConfigurable.selectionTab" value="1" />
     <property name="SAVED_ANDROID_NPW_ASKED_LANGUAGE" value="true" />
     <property name="SAVED_ANDROID_NPW_LANGUAGE" value="Kotlin" />
     <property name="SAVED_ANDROID_PACKAGE" value="raphtlw.apps" />
+    <property name="SPLIT_EDITOR_MODE_/home/raphael/Desktop/Newstry/android/app/src/main/res/layout/activity_login.xml" value="SPLIT" />
+    <property name="SPLIT_EDITOR_MODE_/home/raphael/Desktop/Newstry/android/app/src/main/res/layout/activity_main.xml" value="SPLIT" />
+    <property name="SPLIT_EDITOR_MODE_/home/raphael/Desktop/Newstry/android/app/src/main/res/layout/app_bar.xml" value="SPLIT" />
+    <property name="SPLIT_EDITOR_MODE_/home/raphael/Desktop/Newstry/android/app/src/main/res/layout/fragment_home.xml" value="SPLIT" />
+    <property name="SPLIT_EDITOR_MODE_/home/raphael/Desktop/Newstry/android/app/src/main/res/layout/fragment_settings.xml" value="SPLIT" />
+    <property name="SPLIT_EDITOR_MODE_/home/raphael/Desktop/Newstry/android/app/src/main/res/menu/bottom_nav_menu.xml" value="SPLIT" />
+    <property name="SPLIT_EDITOR_MODE_/home/raphael/Desktop/Newstry/android/app/src/main/res/navigation/mobile_navigation.xml" value="SPLIT" />
+    <property name="SPLIT_EDITOR_MODE_/home/raphael/Desktop/Newstry/android/app/src/main/res/xml/preferences.xml" value="SPLIT" />
     <property name="SPLIT_EDITOR_MODE_/home/raphael/Desktop/zorin/app/app/src/main/res/drawable/chatbubble_1.xml" value="DEACTIVATED" />
     <property name="SPLIT_EDITOR_MODE_/home/raphael/Desktop/zorin/app/app/src/main/res/drawable/circle.xml" value="FULL" />
-    <property name="SPLIT_EDITOR_MODE_/home/raphael/Desktop/zorin/app/app/src/main/res/layout/activity_main.xml" value="FULL" />
+    <property name="SPLIT_EDITOR_MODE_/home/raphael/Desktop/zorin/app/app/src/main/res/layout/activity_login.xml" value="SPLIT" />
+    <property name="SPLIT_EDITOR_MODE_/home/raphael/Desktop/zorin/app/app/src/main/res/layout/activity_main.xml" value="SPLIT" />
+    <property name="SPLIT_EDITOR_MODE_/home/raphael/Desktop/zorin/app/app/src/main/res/layout/activity_second.xml" value="SPLIT" />
+    <property name="SPLIT_EDITOR_MODE_/home/raphael/Desktop/zorin/app/app/src/main/res/layout/activity_temp.xml" value="SPLIT" />
+    <property name="SPLIT_EDITOR_MODE_/home/raphael/Desktop/zorin/app/app/src/main/res/layout/app_bar_main.xml" value="SPLIT" />
+    <property name="SPLIT_EDITOR_MODE_/home/raphael/Desktop/zorin/app/app/src/main/res/layout/content_main.xml" value="SPLIT" />
+    <property name="SPLIT_EDITOR_MODE_/home/raphael/Desktop/zorin/app/app/src/main/res/layout/empty_view.xml" value="SPLIT" />
+    <property name="SPLIT_EDITOR_MODE_/home/raphael/Desktop/zorin/app/app/src/main/res/layout/fragment_about.xml" value="SPLIT" />
+    <property name="SPLIT_EDITOR_MODE_/home/raphael/Desktop/zorin/app/app/src/main/res/layout/fragment_home.xml" value="SPLIT" />
+    <property name="SPLIT_EDITOR_MODE_/home/raphael/Desktop/zorin/app/app/src/main/res/layout/item_message_received.xml" value="SPLIT" />
     <property name="SPLIT_EDITOR_MODE_/home/raphael/Desktop/zorin/app/app/src/main/res/layout/item_message_recieved.xml" value="SPLIT" />
+    <property name="SPLIT_EDITOR_MODE_/home/raphael/Desktop/zorin/app/app/src/main/res/layout/item_message_sent.xml" value="SPLIT" />
+    <property name="SPLIT_EDITOR_MODE_/home/raphael/Desktop/zorin/app/app/src/main/res/layout/navigation_header.xml" value="SPLIT" />
     <property name="SPLIT_EDITOR_MODE_/home/raphael/Desktop/zorin/app/app/src/main/res/layout/recieved_message.xml" value="FULL" />
-    <property name="SettingsSearchHistory" value="th&#10;ke" />
-    <property name="TextEditorWithPreview.SplitterProportionKey" value="0.57746476" />
+    <property name="SPLIT_EDITOR_MODE_/home/raphael/Desktop/zorin/app/app/src/main/res/layout/top_app_bar.xml" value="SPLIT" />
+    <property name="SPLIT_EDITOR_MODE_/home/raphael/Desktop/zorin/app/app/src/main/res/menu/navigation_icons.xml" value="SPLIT" />
+    <property name="SPLIT_EDITOR_MODE_/home/raphael/Desktop/zorin/app/app/src/main/res/menu/navigation_items.xml" value="SPLIT" />
+    <property name="SPLIT_EDITOR_MODE_/home/raphael/Desktop/zorin/app/app/src/main/res/menu/top_app_bar.xml" value="SPLIT" />
+    <property name="SPLIT_EDITOR_MODE_/home/raphael/Desktop/zorin/app/app/src/main/res/navigation/mobile_navigation.xml" value="SPLIT" />
+    <property name="SettingsSearchHistory" value="hide empty&#10;save&#10;color&#10;director&#10;folder" />
+    <property name="TextEditorWithPreview.SplitterProportionKey" value="0.6398844" />
     <property name="ask.about.ctrl.y.shortcut" value="true" />
     <property name="build.toolwindow.Build Output.selection.state" value="com.intellij.build.BuildTreeConsoleView" />
     <property name="build.toolwindow.Sync.selection.state" value="com.intellij.build.BuildTreeConsoleView" />
     <property name="colorPickerCategoryProperty" value="MATERIAL_500" />
-    <property name="file.chooser.recent.files" value="$USER_HOME$/Desktop/zorin/app" />
-    <property name="file.gist.reindex.count" value="4" />
-    <property name="fileTypeChangedCounter" value="1" />
+    <property name="com.intellij.history.integration.ui.views.DirectoryHistoryDialog.0" value="300" />
+    <property name="decompiler.legal.notice.accepted" value="true" />
+    <property name="file.chooser.recent.files" value="$USER_HOME$/Desktop/Newstry/android&#10;/home/raphael/Desktop/Zorin/app&#10;/home/raphael/Desktop/TrueTweet/android&#10;/home/raphael/Desktop/zorin/app&#10;/home/raphael/Desktop/zorin/app/app_icon_background.png&#10;/home/raphael/Desktop/zorin/app/app_icon_foreground.png" />
+    <property name="file.gist.reindex.count" value="36" />
+    <property name="fileTypeChangedCounter" value="2" />
     <property name="inspector.open.All Attributes" value="true" />
     <property name="inspector.open.Declared Attributes" value="true" />
     <property name="inspector.open.textAppearance" value="true" />
-    <property name="installed.kotlin.plugin.version" value="1.3.72-release-Studio4.0-5" />
+    <property name="installed.kotlin.plugin.version" value="1.4.0-release-Studio4.0-1" />
     <property name="kotlin-gradle-user-dirs" value="$USER_HOME$/.gradle" />
-    <property name="kotlin.lastUpdateCheck" value="1597294957212" />
-    <property name="kotlin.plugin.releaseDate" value="1.3.72-release-Studio4.0-5:2020-06-17" />
+    <property name="kotlin.lastUpdateCheck" value="1598104532995" />
+    <property name="kotlin.plugin.releaseDate" value="1.4.0-release-Studio4.0-1:2020-08-17" />
     <property name="lastTip" value="1" />
-    <property name="studio.activity.count" value="0" />
+    <property name="settings.code.style.selected.tab.JAVA" value="Wrapping and Braces" />
+    <property name="studio.activity.count" value="1" />
     <property name="tasks.pass.word.conversion.enforced" value="true" />
   </component>
 </application>
