@@ -44,6 +44,7 @@
     <jdk version="2">
       <name value="Android API 30 Platform" />
       <type value="Android SDK" />
+      <version value="java version &quot;1.8.0_242&quot;" />
       <homePath value="$USER_HOME$/Android/Sdk" />
       <roots>
         <annotationsPath>

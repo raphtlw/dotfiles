@@ -2,14 +2,14 @@
   <component name="DimensionService">
     <location key="WELCOME_SCREEN.0.0.2256.1504@144dpi" x="1285" y="450" />
     <location key="find.popup.0.0.2256.1504@144dpi" x="598" y="244" />
-    <size key="GridCell.Tab.0.left.0.0.2256.1504@144dpi" width="2190" height="339" />
-    <size key="GridCell.Tab.0.center.0.0.2256.1504@144dpi" width="2190" height="339" />
-    <size key="GridCell.Tab.0.right.0.0.2256.1504@144dpi" width="2190" height="339" />
-    <size key="GridCell.Tab.0.bottom.0.0.2256.1504@144dpi" width="2190" height="339" />
+    <size key="GridCell.Tab.0.left.0.0.2256.1504@144dpi" width="2190" height="399" />
+    <size key="GridCell.Tab.0.center.0.0.2256.1504@144dpi" width="2190" height="399" />
+    <size key="GridCell.Tab.0.right.0.0.2256.1504@144dpi" width="2190" height="399" />
+    <size key="GridCell.Tab.0.bottom.0.0.2256.1504@144dpi" width="2190" height="399" />
     <size key="find.popup.0.0.2256.1504@144dpi" width="976" height="974" />
   </component>
   <component name="WindowManager">
-    <frame x="344" y="314" width="1360" height="846" extendedState="6" />
+    <frame x="387" y="252" width="1320" height="834" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" weight="0.25" />
       <window_info id="Structure" order="1" weight="0.25" />
