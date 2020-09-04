@@ -10,6 +10,7 @@ setopt auto_menu
 setopt auto_cd
 
 # Autocompletion
+fpath=(~/.zsh $fpath)
 autoload -Uz compinit && compinit
 zmodload -i zsh/complist
 zstyle ':completion:*' menu select

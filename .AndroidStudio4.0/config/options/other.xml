@@ -173,7 +173,7 @@
     <property name="lastTip" value="1" />
     <property name="newly.installed.api.level" value="30" />
     <property name="settings.code.style.selected.tab.JAVA" value="Wrapping and Braces" />
-    <property name="studio.activity.count" value="5" />
+    <property name="studio.activity.count" value="6" />
     <property name="tasks.pass.word.conversion.enforced" value="true" />
   </component>
 </application>
