@@ -161,19 +161,19 @@
     <property name="com.intellij.history.integration.ui.views.DirectoryHistoryDialog.0" value="300" />
     <property name="decompiler.legal.notice.accepted" value="true" />
     <property name="file.chooser.recent.files" value="$USER_HOME$/Desktop/Newstry/android&#10;/home/raphael/Desktop/Zorin/app&#10;/home/raphael/Desktop/TrueTweet/android&#10;/home/raphael/Desktop/zorin/app&#10;/home/raphael/Desktop/zorin/app/app_icon_background.png&#10;/home/raphael/Desktop/zorin/app/app_icon_foreground.png" />
-    <property name="file.gist.reindex.count" value="45" />
+    <property name="file.gist.reindex.count" value="47" />
     <property name="fileTypeChangedCounter" value="2" />
     <property name="inspector.open.All Attributes" value="true" />
     <property name="inspector.open.Declared Attributes" value="true" />
     <property name="inspector.open.textAppearance" value="true" />
     <property name="installed.kotlin.plugin.version" value="1.4.0-release-Studio4.0-1" />
     <property name="kotlin-gradle-user-dirs" value="$USER_HOME$/.gradle" />
-    <property name="kotlin.lastUpdateCheck" value="1598440063135" />
+    <property name="kotlin.lastUpdateCheck" value="1599380530366" />
     <property name="kotlin.plugin.releaseDate" value="1.4.0-release-Studio4.0-1:2020-08-17" />
     <property name="lastTip" value="1" />
     <property name="newly.installed.api.level" value="30" />
     <property name="settings.code.style.selected.tab.JAVA" value="Wrapping and Braces" />
-    <property name="studio.activity.count" value="6" />
+    <property name="studio.activity.count" value="2" />
     <property name="tasks.pass.word.conversion.enforced" value="true" />
   </component>
 </application>

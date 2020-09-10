@@ -11065,19 +11065,6 @@
         </option>
       </plugins>
     </entry>
-    <entry key="machete">
-      <plugins>
-        <option name="myPlugins">
-          <set>
-            <plugin>
-              <option name="myPluginId" value="com.virtuslab.git-machete" />
-              <option name="myPluginName" />
-              <option name="myBundled" value="false" />
-            </plugin>
-          </set>
-        </option>
-      </plugins>
-    </entry>
     <entry key="makefile">
       <plugins>
         <option name="myPlugins">
