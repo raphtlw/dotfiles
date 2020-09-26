@@ -115,7 +115,7 @@
     <property name="MemberChooser.showClasses" value="true" />
     <property name="MobileminApi" value="23" />
     <property name="NlScreenMode" value="RENDER" />
-    <property name="PROJECT_STRUCTURE_NOTIFICATION_LAST_HIDDEN_TIMESTAMP" value="1597388894990" />
+    <property name="PROJECT_STRUCTURE_NOTIFICATION_LAST_HIDDEN_TIMESTAMP" value="1601097819334" />
     <property name="PluginConfigurable.selectionTab" value="1" />
     <property name="SAVED_ANDROID_NPW_ASKED_LANGUAGE" value="true" />
     <property name="SAVED_ANDROID_NPW_LANGUAGE" value="Kotlin" />
@@ -131,6 +131,9 @@
     <property name="SPLIT_EDITOR_MODE_/home/raphael/Desktop/Newstry/android/app/src/main/res/menu/bottom_nav_menu.xml" value="SPLIT" />
     <property name="SPLIT_EDITOR_MODE_/home/raphael/Desktop/Newstry/android/app/src/main/res/navigation/mobile_navigation.xml" value="SPLIT" />
     <property name="SPLIT_EDITOR_MODE_/home/raphael/Desktop/Newstry/android/app/src/main/res/xml/preferences.xml" value="SPLIT" />
+    <property name="SPLIT_EDITOR_MODE_/home/raphael/Desktop/qscan/app/src/main/res/layout/activity_main.xml" value="SPLIT" />
+    <property name="SPLIT_EDITOR_MODE_/home/raphael/Desktop/qscan/app/src/main/res/layout/fragment_home.xml" value="SPLIT" />
+    <property name="SPLIT_EDITOR_MODE_/home/raphael/Desktop/qscan/app/src/main/res/menu/bottom_nav_menu.xml" value="SPLIT" />
     <property name="SPLIT_EDITOR_MODE_/home/raphael/Desktop/zorin/app/app/src/main/res/drawable/chatbubble_1.xml" value="DEACTIVATED" />
     <property name="SPLIT_EDITOR_MODE_/home/raphael/Desktop/zorin/app/app/src/main/res/drawable/circle.xml" value="FULL" />
     <property name="SPLIT_EDITOR_MODE_/home/raphael/Desktop/zorin/app/app/src/main/res/layout/activity_login.xml" value="SPLIT" />
@@ -160,20 +163,20 @@
     <property name="colorPickerCategoryProperty" value="MATERIAL_500" />
     <property name="com.intellij.history.integration.ui.views.DirectoryHistoryDialog.0" value="300" />
     <property name="decompiler.legal.notice.accepted" value="true" />
-    <property name="file.chooser.recent.files" value="$USER_HOME$/Desktop/Newstry/android&#10;/home/raphael/Desktop/Zorin/app&#10;/home/raphael/Desktop/TrueTweet/android&#10;/home/raphael/Desktop/zorin/app&#10;/home/raphael/Desktop/zorin/app/app_icon_background.png&#10;/home/raphael/Desktop/zorin/app/app_icon_foreground.png" />
-    <property name="file.gist.reindex.count" value="47" />
-    <property name="fileTypeChangedCounter" value="2" />
+    <property name="file.chooser.recent.files" value="$USER_HOME$/Desktop/qscan&#10;/home/raphael/Desktop/Newstry/android&#10;/home/raphael/Desktop/Zorin/app&#10;/home/raphael/Desktop/TrueTweet/android&#10;/home/raphael/Desktop/zorin/app&#10;/home/raphael/Desktop/zorin/app/app_icon_background.png&#10;/home/raphael/Desktop/zorin/app/app_icon_foreground.png" />
+    <property name="file.gist.reindex.count" value="53" />
+    <property name="fileTypeChangedCounter" value="3" />
     <property name="inspector.open.All Attributes" value="true" />
     <property name="inspector.open.Declared Attributes" value="true" />
     <property name="inspector.open.textAppearance" value="true" />
     <property name="installed.kotlin.plugin.version" value="1.4.0-release-Studio4.0-1" />
     <property name="kotlin-gradle-user-dirs" value="$USER_HOME$/.gradle" />
-    <property name="kotlin.lastUpdateCheck" value="1599380530366" />
+    <property name="kotlin.lastUpdateCheck" value="1601052333354" />
     <property name="kotlin.plugin.releaseDate" value="1.4.0-release-Studio4.0-1:2020-08-17" />
     <property name="lastTip" value="1" />
     <property name="newly.installed.api.level" value="30" />
     <property name="settings.code.style.selected.tab.JAVA" value="Wrapping and Braces" />
-    <property name="studio.activity.count" value="2" />
+    <property name="studio.activity.count" value="31" />
     <property name="tasks.pass.word.conversion.enforced" value="true" />
   </component>
 </application>

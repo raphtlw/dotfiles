@@ -439,6 +439,19 @@
         </option>
       </plugins>
     </entry>
+    <entry key="*.api">
+      <plugins>
+        <option name="myPlugins">
+          <set>
+            <plugin>
+              <option name="myPluginId" value="cn.xiaoheiban.go-zero" />
+              <option name="myPluginName" />
+              <option name="myBundled" value="false" />
+            </plugin>
+          </set>
+        </option>
+      </plugins>
+    </entry>
     <entry key="*.apk">
       <plugins>
         <option name="myPlugins">
@@ -1971,6 +1984,19 @@
         </option>
       </plugins>
     </entry>
+    <entry key="*.dash">
+      <plugins>
+        <option name="myPlugins">
+          <set>
+            <plugin>
+              <option name="myPluginId" value="pro.bashsupport" />
+              <option name="myPluginName" />
+              <option name="myBundled" value="false" />
+            </plugin>
+          </set>
+        </option>
+      </plugins>
+    </entry>
     <entry key="*.db">
       <plugins>
         <option name="myPlugins">
@@ -2301,6 +2327,19 @@
               <option name="myPluginId" value="com.intellij.drools" />
               <option name="myPluginName" value="Drools Support" />
               <option name="myBundled" value="true" />
+            </plugin>
+          </set>
+        </option>
+      </plugins>
+    </entry>
+    <entry key="*.dsc">
+      <plugins>
+        <option name="myPlugins">
+          <set>
+            <plugin>
+              <option name="myPluginId" value="com.github.nthykier.debpkg" />
+              <option name="myPluginName" />
+              <option name="myBundled" value="false" />
             </plugin>
           </set>
         </option>
@@ -2840,6 +2879,11 @@
         <option name="myPlugins">
           <set>
             <plugin>
+              <option name="myPluginId" value="com.gmail.blueboxware.libgdxplugin" />
+              <option name="myPluginName" />
+              <option name="myBundled" value="false" />
+            </plugin>
+            <plugin>
               <option name="myPluginId" value="com.soywiz.korge.korge-intellij-plugin" />
               <option name="myPluginName" />
               <option name="myBundled" value="false" />
@@ -3080,6 +3124,19 @@
           <set>
             <plugin>
               <option name="myPluginId" value="GLSL" />
+              <option name="myPluginName" />
+              <option name="myBundled" value="false" />
+            </plugin>
+          </set>
+        </option>
+      </plugins>
+    </entry>
+    <entry key="*.glstex">
+      <plugins>
+        <option name="myPlugins">
+          <set>
+            <plugin>
+              <option name="myPluginId" value="nl.rubensten.texifyidea" />
               <option name="myPluginName" />
               <option name="myBundled" value="false" />
             </plugin>
@@ -4356,6 +4413,19 @@
         </option>
       </plugins>
     </entry>
+    <entry key="*.ksh">
+      <plugins>
+        <option name="myPlugins">
+          <set>
+            <plugin>
+              <option name="myPluginId" value="pro.bashsupport" />
+              <option name="myPluginName" />
+              <option name="myBundled" value="false" />
+            </plugin>
+          </set>
+        </option>
+      </plugins>
+    </entry>
     <entry key="*.ktree">
       <plugins>
         <option name="myPlugins">
@@ -4748,6 +4818,19 @@
         </option>
       </plugins>
     </entry>
+    <entry key="*.lson">
+      <plugins>
+        <option name="myPlugins">
+          <set>
+            <plugin>
+              <option name="myPluginId" value="com.gmail.blueboxware.libgdxplugin" />
+              <option name="myPluginName" />
+              <option name="myBundled" value="false" />
+            </plugin>
+          </set>
+        </option>
+      </plugins>
+    </entry>
     <entry key="*.ltp">
       <plugins>
         <option name="myPlugins">
@@ -5090,6 +5173,19 @@
           <set>
             <plugin>
               <option name="myPluginId" value="com.vladsch.idea.multimarkdown" />
+              <option name="myPluginName" />
+              <option name="myBundled" value="false" />
+            </plugin>
+          </set>
+        </option>
+      </plugins>
+    </entry>
+    <entry key="*.mksh">
+      <plugins>
+        <option name="myPlugins">
+          <set>
+            <plugin>
+              <option name="myPluginId" value="pro.bashsupport" />
               <option name="myPluginName" />
               <option name="myBundled" value="false" />
             </plugin>
@@ -6732,6 +6828,19 @@
         </option>
       </plugins>
     </entry>
+    <entry key="*.putiming">
+      <plugins>
+        <option name="myPlugins">
+          <set>
+            <plugin>
+              <option name="myPluginId" value="jp.kitabatakep.intellij.plugins.PlantUMLStudio" />
+              <option name="myPluginName" />
+              <option name="myBundled" value="false" />
+            </plugin>
+          </set>
+        </option>
+      </plugins>
+    </entry>
     <entry key="*.puusecase">
       <plugins>
         <option name="myPlugins">
@@ -7802,6 +7911,19 @@
           <set>
             <plugin>
               <option name="myPluginId" value="com.soywiz.korge.korge-intellij-plugin" />
+              <option name="myPluginName" />
+              <option name="myBundled" value="false" />
+            </plugin>
+          </set>
+        </option>
+      </plugins>
+    </entry>
+    <entry key="*.skin">
+      <plugins>
+        <option name="myPlugins">
+          <set>
+            <plugin>
+              <option name="myPluginId" value="com.gmail.blueboxware.libgdxplugin" />
               <option name="myPluginName" />
               <option name="myBundled" value="false" />
             </plugin>
