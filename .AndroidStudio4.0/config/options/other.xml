@@ -98,19 +98,21 @@
     <property name="AndroidInitConfigurator.V1" value="true" />
     <property name="AndroidInitConfigurator.V3" value="true" />
     <property name="AndroidInitConfigurator.V5" value="true" />
-    <property name="CommitChangeListDialog.DETAILS_SPLITTER_PROPORTION_2" value="0.6534149" />
+    <property name="BuildView.Splitter.Proportion" value="0.2899767" />
+    <property name="ColorChooser.RecentColors" value="255-255-255-255" />
+    <property name="CommitChangeListDialog.DETAILS_SPLITTER_PROPORTION_2" value="0.6717635" />
     <property name="ConstraintLayoutPreferenceShowMargins" value="true" />
     <property name="Darcula.SavedEditorTheme" value="_@user_Darcula" />
     <property name="Default.SavedEditorTheme" value="_@user_Default" />
     <property name="ExpandBeforeRunStepsPanel" value="true" />
     <property name="ExpandRunDashboardTypesPanel" value="false" />
     <property name="FileTemplates.SelectedTemplate" value="HTML File" />
-    <property name="InstalledPluginsSearchHistory" value="native&#10;vuesion&#10;gradianto&#10;gradiant&#10;gradian" />
+    <property name="InstalledPluginsSearchHistory" value="typing latency&#10;typing latenc&#10;ty&#10;wifi&#10;a" />
     <property name="KEYMAP" value="completion" />
     <property name="LayoutCode.codeCleanup" value="true" />
     <property name="LayoutCode.optimizeImports" value="false" />
     <property name="LayoutCode.rearrangeEntriesXML" value="true" />
-    <property name="MarketplacePluginsSearchHistory" value="vuesion&#10;v&#10;carbon&#10;c&#10;nord" />
+    <property name="MarketplacePluginsSearchHistory" value="wifi&#10;adb&#10;wifi adb&#10;android&#10;and" />
     <property name="MemberChooser.copyJavadoc" value="false" />
     <property name="MemberChooser.showClasses" value="true" />
     <property name="MobileminApi" value="23" />
@@ -132,7 +134,11 @@
     <property name="SPLIT_EDITOR_MODE_/home/raphael/Desktop/Newstry/android/app/src/main/res/navigation/mobile_navigation.xml" value="SPLIT" />
     <property name="SPLIT_EDITOR_MODE_/home/raphael/Desktop/Newstry/android/app/src/main/res/xml/preferences.xml" value="SPLIT" />
     <property name="SPLIT_EDITOR_MODE_/home/raphael/Desktop/qscan/app/src/main/res/layout/activity_main.xml" value="SPLIT" />
+    <property name="SPLIT_EDITOR_MODE_/home/raphael/Desktop/qscan/app/src/main/res/layout/activity_scanner.xml" value="SPLIT" />
+    <property name="SPLIT_EDITOR_MODE_/home/raphael/Desktop/qscan/app/src/main/res/layout/custom_scanner.xml" value="SPLIT" />
     <property name="SPLIT_EDITOR_MODE_/home/raphael/Desktop/qscan/app/src/main/res/layout/fragment_home.xml" value="SPLIT" />
+    <property name="SPLIT_EDITOR_MODE_/home/raphael/Desktop/qscan/app/src/main/res/layout/fragment_scan_history.xml" value="SPLIT" />
+    <property name="SPLIT_EDITOR_MODE_/home/raphael/Desktop/qscan/app/src/main/res/layout/fragment_scanner.xml" value="SPLIT" />
     <property name="SPLIT_EDITOR_MODE_/home/raphael/Desktop/qscan/app/src/main/res/menu/bottom_nav_menu.xml" value="SPLIT" />
     <property name="SPLIT_EDITOR_MODE_/home/raphael/Desktop/zorin/app/app/src/main/res/drawable/chatbubble_1.xml" value="DEACTIVATED" />
     <property name="SPLIT_EDITOR_MODE_/home/raphael/Desktop/zorin/app/app/src/main/res/drawable/circle.xml" value="FULL" />
@@ -155,28 +161,28 @@
     <property name="SPLIT_EDITOR_MODE_/home/raphael/Desktop/zorin/app/app/src/main/res/menu/navigation_items.xml" value="SPLIT" />
     <property name="SPLIT_EDITOR_MODE_/home/raphael/Desktop/zorin/app/app/src/main/res/menu/top_app_bar.xml" value="SPLIT" />
     <property name="SPLIT_EDITOR_MODE_/home/raphael/Desktop/zorin/app/app/src/main/res/navigation/mobile_navigation.xml" value="SPLIT" />
-    <property name="SettingsSearchHistory" value="native&#10;experi&#10;global menu&#10;newer library&#10;code completion" />
+    <property name="SettingsSearchHistory" value="typing latency&#10;kotlin compiler&#10;native&#10;experi&#10;global menu" />
     <property name="TextEditorWithPreview.SplitterProportionKey" value="0.6398844" />
     <property name="ask.about.ctrl.y.shortcut" value="true" />
     <property name="build.toolwindow.Build Output.selection.state" value="com.intellij.build.BuildTreeConsoleView" />
     <property name="build.toolwindow.Sync.selection.state" value="com.intellij.build.BuildTreeConsoleView" />
-    <property name="colorPickerCategoryProperty" value="MATERIAL_500" />
+    <property name="colorPickerCategoryProperty" value="MATERIAL_ACCENT_400" />
     <property name="com.intellij.history.integration.ui.views.DirectoryHistoryDialog.0" value="300" />
     <property name="decompiler.legal.notice.accepted" value="true" />
     <property name="file.chooser.recent.files" value="$USER_HOME$/Desktop/qscan&#10;/home/raphael/Desktop/Newstry/android&#10;/home/raphael/Desktop/Zorin/app&#10;/home/raphael/Desktop/TrueTweet/android&#10;/home/raphael/Desktop/zorin/app&#10;/home/raphael/Desktop/zorin/app/app_icon_background.png&#10;/home/raphael/Desktop/zorin/app/app_icon_foreground.png" />
-    <property name="file.gist.reindex.count" value="53" />
+    <property name="file.gist.reindex.count" value="55" />
     <property name="fileTypeChangedCounter" value="3" />
     <property name="inspector.open.All Attributes" value="true" />
     <property name="inspector.open.Declared Attributes" value="true" />
     <property name="inspector.open.textAppearance" value="true" />
-    <property name="installed.kotlin.plugin.version" value="1.4.0-release-Studio4.0-1" />
+    <property name="installed.kotlin.plugin.version" value="1.4.10-release-Studio4.0-1" />
     <property name="kotlin-gradle-user-dirs" value="$USER_HOME$/.gradle" />
-    <property name="kotlin.lastUpdateCheck" value="1601052333354" />
-    <property name="kotlin.plugin.releaseDate" value="1.4.0-release-Studio4.0-1:2020-08-17" />
+    <property name="kotlin.lastUpdateCheck" value="1601269627780" />
+    <property name="kotlin.plugin.releaseDate" value="1.4.10-release-Studio4.0-1:2020-09-10" />
     <property name="lastTip" value="1" />
     <property name="newly.installed.api.level" value="30" />
     <property name="settings.code.style.selected.tab.JAVA" value="Wrapping and Braces" />
-    <property name="studio.activity.count" value="31" />
+    <property name="studio.activity.count" value="274" />
     <property name="tasks.pass.word.conversion.enforced" value="true" />
   </component>
 </application>
