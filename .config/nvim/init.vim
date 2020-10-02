@@ -19,9 +19,11 @@ Plug 'ryanoasis/vim-devicons'
 Plug 'Xuyuanp/nerdtree-git-plugin'
 Plug 'junegunn/fzf', {'do': {-> fzf#install()}}
 Plug 'junegunn/fzf.vim'
-Plug 'iamcco/markdown-preview.nvim', { 'do': { -> mkdp#util#install() }, 'for': ['markdown', 'vim-plug']}
 Plug 'mattn/emmet-vim'
 Plug 'alvan/vim-closetag'
+" Language support
+Plug 'iamcco/markdown-preview.nvim', { 'do': { -> mkdp#util#install() }, 'for': ['markdown', 'vim-plug']}
+Plug 'plasticboy/vim-markdown'
 Plug 'dart-lang/dart-vim-plugin'
 Plug 'evanleck/vim-svelte'
 " Theme
@@ -45,6 +47,7 @@ set showtabline=2
 set noshowmode
 set nowrap
 filetype plugin on
+autocmd BufRead,BufNewFile *.md setlocal spell
 
 " NeoVide Settings
 let g:neovide_refresh_rate=60
@@ -81,7 +84,7 @@ vnoremap <silent> <C-s> <Esc> :w<CR>
 vnoremap <silent> <C-X> "+x
 vnoremap <silent> <C-C> "+y
 map <silent> <C-V> "+gP
-cmap <silent> <C-V> <C-R>+
+inoremap <silent> <C-V> <Esc> "+gP<CR>
 nmap <silent> <C-/> <plug>NERDCommenterToggle
 xmap <silent> <C-/> <plug>NERDCommenterToggle
 nnoremap <silent> <C-f> :Rg<CR>
