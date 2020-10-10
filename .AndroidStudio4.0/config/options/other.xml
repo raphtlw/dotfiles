@@ -161,7 +161,7 @@
     <property name="SPLIT_EDITOR_MODE_/home/raphael/Desktop/zorin/app/app/src/main/res/menu/navigation_items.xml" value="SPLIT" />
     <property name="SPLIT_EDITOR_MODE_/home/raphael/Desktop/zorin/app/app/src/main/res/menu/top_app_bar.xml" value="SPLIT" />
     <property name="SPLIT_EDITOR_MODE_/home/raphael/Desktop/zorin/app/app/src/main/res/navigation/mobile_navigation.xml" value="SPLIT" />
-    <property name="SettingsSearchHistory" value="typing latency&#10;kotlin compiler&#10;native&#10;experi&#10;global menu" />
+    <property name="SettingsSearchHistory" value="drag and drop&#10;typing latency&#10;kotlin compiler&#10;native&#10;experi" />
     <property name="TextEditorWithPreview.SplitterProportionKey" value="0.6398844" />
     <property name="ask.about.ctrl.y.shortcut" value="true" />
     <property name="build.toolwindow.Build Output.selection.state" value="com.intellij.build.BuildTreeConsoleView" />
@@ -170,19 +170,19 @@
     <property name="com.intellij.history.integration.ui.views.DirectoryHistoryDialog.0" value="300" />
     <property name="decompiler.legal.notice.accepted" value="true" />
     <property name="file.chooser.recent.files" value="$USER_HOME$/Desktop/qscan&#10;/home/raphael/Desktop/Newstry/android&#10;/home/raphael/Desktop/Zorin/app&#10;/home/raphael/Desktop/TrueTweet/android&#10;/home/raphael/Desktop/zorin/app&#10;/home/raphael/Desktop/zorin/app/app_icon_background.png&#10;/home/raphael/Desktop/zorin/app/app_icon_foreground.png" />
-    <property name="file.gist.reindex.count" value="55" />
+    <property name="file.gist.reindex.count" value="56" />
     <property name="fileTypeChangedCounter" value="3" />
     <property name="inspector.open.All Attributes" value="true" />
     <property name="inspector.open.Declared Attributes" value="true" />
     <property name="inspector.open.textAppearance" value="true" />
     <property name="installed.kotlin.plugin.version" value="1.4.10-release-Studio4.0-1" />
     <property name="kotlin-gradle-user-dirs" value="$USER_HOME$/.gradle" />
-    <property name="kotlin.lastUpdateCheck" value="1601269627780" />
+    <property name="kotlin.lastUpdateCheck" value="1601747504141" />
     <property name="kotlin.plugin.releaseDate" value="1.4.10-release-Studio4.0-1:2020-09-10" />
     <property name="lastTip" value="1" />
     <property name="newly.installed.api.level" value="30" />
     <property name="settings.code.style.selected.tab.JAVA" value="Wrapping and Braces" />
-    <property name="studio.activity.count" value="274" />
+    <property name="studio.activity.count" value="71" />
     <property name="tasks.pass.word.conversion.enforced" value="true" />
   </component>
 </application>

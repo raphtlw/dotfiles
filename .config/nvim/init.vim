@@ -19,7 +19,6 @@ Plug 'ryanoasis/vim-devicons'
 Plug 'Xuyuanp/nerdtree-git-plugin'
 Plug 'junegunn/fzf', {'do': {-> fzf#install()}}
 Plug 'junegunn/fzf.vim'
-Plug 'mattn/emmet-vim'
 Plug 'alvan/vim-closetag'
 " Language support
 Plug 'iamcco/markdown-preview.nvim', { 'do': { -> mkdp#util#install() }, 'for': ['markdown', 'vim-plug']}
@@ -46,16 +45,17 @@ set laststatus=2
 set showtabline=2
 set noshowmode
 set nowrap
+set formatoptions-=cro
 filetype plugin on
-autocmd BufRead,BufNewFile *.md setlocal spell
+autocmd BufRead,BufNewFile *.md setlocal spell wrap linebreak
 
 " NeoVide Settings
 let g:neovide_refresh_rate=60
 let g:neovide_transparency=1.0
 let g:neovide_no_idle=v:false
 let g:neovide_fullscreen=v:false
-let g:neovide_cursor_animation_length=0.1
-let g:neovide_cursor_trail_length=0.4
+let g:neovide_cursor_animation_length=0.0
+let g:neovide_cursor_trail_length=0.0
 let g:neovide_cursor_antialiasing=v:true
 set guifont=FiraCode\ Nerd\ Font:h21
 
@@ -77,7 +77,7 @@ nmap <silent> <Leader>7 <Plug>lightline#bufferline#go(7)
 nmap <silent> <Leader>8 <Plug>lightline#bufferline#go(8)
 nmap <silent> <Leader>9 <Plug>lightline#bufferline#go(9)
 nmap <silent> <Leader>0 <Plug>lightline#bufferline#go(10)
-nmap <silent> <Leader>w :bd<CR>
+nmap <silent> <C-w> :bd<CR>
 nnoremap <silent> <C-s> :w<CR>
 inoremap <silent> <C-s> <Esc> :w<CR>
 vnoremap <silent> <C-s> <Esc> :w<CR>
@@ -88,6 +88,10 @@ inoremap <silent> <C-V> <Esc> "+gP<CR>
 nmap <silent> <C-/> <plug>NERDCommenterToggle
 xmap <silent> <C-/> <plug>NERDCommenterToggle
 nnoremap <silent> <C-f> :Rg<CR>
+
+" Custom commands
+command! Settings :e $MYVIMRC
+command! Reload :so $MYVIMRC
 
 " Plugin Configurations
 let g:lightline                  = {}
@@ -102,7 +106,7 @@ let NERDTreeShowHidden = 1
 let g:lsc_auto_map = v:true
 let g:closetag_filenames = '*.html,*.xhtml,*.phtml,*.md,*.svelte'
 
-" Automatic commands
+" Lightline update
 autocmd BufWritePost,TextChanged,TextChangedI * call lightline#update()
 
 " coc.nvim configuration
@@ -159,9 +163,9 @@ inoremap <silent><expr> <c-space> coc#refresh()
 " position. Coc only does snippet and additional edit on confirm.
 " <cr> could be remapped by other vim plugin, try `:verbose imap <CR>`.
 if exists('*complete_info')
-  inoremap <expr> <cr> complete_info()["selected"] != "-1" ? "\<C-y>" : "\<C-g>u\<CR>"
+  inoremap <expr> <TAB> complete_info()["selected"] != "-1" ? "\<C-y>" : "\<C-g>u\<CR>"
 else
-  inoremap <expr> <cr> pumvisible() ? "\<C-y>" : "\<C-g>u\<CR>"
+  inoremap <expr> <TAB> pumvisible() ? "\<C-y>" : "\<C-g>u\<CR>"
 endif
 
 " Use `[g` and `]g` to navigate diagnostics

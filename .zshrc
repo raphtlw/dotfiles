@@ -1,5 +1,7 @@
 # ~/.zshrc
 
+zmodload zsh/zprof
+
 # Options
 setopt hist_ignore_all_dups
 setopt inc_append_history
@@ -11,7 +13,12 @@ setopt auto_cd
 
 # Autocompletion
 fpath=(~/.zsh $fpath)
-autoload -Uz compinit && compinit
+autoload -Uz compinit 
+if [[ -n ${ZDOTDIR}/.zcompdump(#qN.mh+24) ]]; then
+	compinit;
+else
+	compinit -C;
+fi
 zmodload -i zsh/complist
 zstyle ':completion:*' menu select
 zstyle ':completion:*' group-name ''
@@ -76,3 +83,5 @@ zinit wait lucid for \
 #   for wid in $(xdotool search --pid $PPID); do
 #     xprop -f _KDE_NET_WM_BLUR_BEHIND_REGION 32c -set _KDE_NET_WM_BLUR_BEHIND_REGION 0 -id $wid; done
 # fi
+
+zprof
