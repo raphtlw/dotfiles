@@ -39,9 +39,9 @@ fi
 alias tm="tmux attach || tmux new"
 alias ls="exa"
 alias lsa="ls -a"
-alias l="ls -lah"
-alias la="ls -lah"
-alias ll="ls -lah"
+alias l="ls -lahb"
+alias la="l"
+alias ll="l"
 alias vim="nvim"
 alias vi="nvim"
 
