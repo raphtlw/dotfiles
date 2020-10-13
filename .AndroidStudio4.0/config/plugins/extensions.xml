@@ -1528,6 +1528,19 @@
         </option>
       </plugins>
     </entry>
+    <entry key="*.cob">
+      <plugins>
+        <option name="myPlugins">
+          <set>
+            <plugin>
+              <option name="myPluginId" value="com.badahori.creatures.plugins.intellij.agenteering" />
+              <option name="myPluginName" />
+              <option name="myBundled" value="false" />
+            </plugin>
+          </set>
+        </option>
+      </plugins>
+    </entry>
     <entry key="*.coco">
       <plugins>
         <option name="myPlugins">
@@ -1651,6 +1664,19 @@
           <set>
             <plugin>
               <option name="myPluginId" value="org.concordion.plugin.idea.lang" />
+              <option name="myPluginName" />
+              <option name="myBundled" value="false" />
+            </plugin>
+          </set>
+        </option>
+      </plugins>
+    </entry>
+    <entry key="*.condition">
+      <plugins>
+        <option name="myPlugins">
+          <set>
+            <plugin>
+              <option name="myPluginId" value="ros-integrate" />
               <option name="myPluginName" />
               <option name="myBundled" value="false" />
             </plugin>
@@ -5619,6 +5645,19 @@
         </option>
       </plugins>
     </entry>
+    <entry key="*.nbc">
+      <plugins>
+        <option name="myPlugins">
+          <set>
+            <plugin>
+              <option name="myPluginId" value="org.moe.community" />
+              <option name="myPluginName" />
+              <option name="myBundled" value="false" />
+            </plugin>
+          </set>
+        </option>
+      </plugins>
+    </entry>
     <entry key="*.nbt">
       <plugins>
         <option name="myPlugins">
@@ -7571,6 +7610,19 @@
           <set>
             <plugin>
               <option name="myPluginId" value="org.intellij.scala" />
+              <option name="myPluginName" />
+              <option name="myBundled" value="false" />
+            </plugin>
+          </set>
+        </option>
+      </plugins>
+    </entry>
+    <entry key="*.scad">
+      <plugins>
+        <option name="myPlugins">
+          <set>
+            <plugin>
+              <option name="myPluginId" value="com.javampire.idea-openscad" />
               <option name="myPluginName" />
               <option name="myBundled" value="false" />
             </plugin>
