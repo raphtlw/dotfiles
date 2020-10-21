@@ -44,7 +44,10 @@ alias la="l"
 alias ll="l"
 alias vim="nvim"
 alias vi="nvim"
-alias please="sudo"
+
+function please() {
+  sudo $(fc -ln -1)
+}
 
 # Starship
 eval "$(starship init zsh)"
