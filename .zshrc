@@ -44,6 +44,7 @@ alias la="l"
 alias ll="l"
 alias vim="nvim"
 alias vi="nvim"
+alias please="sudo"
 
 # Starship
 eval "$(starship init zsh)"
@@ -75,6 +76,10 @@ zinit wait lucid atload'_zsh_autosuggest_start' light-mode for \
 zinit wait lucid for \
   zsh-users/zsh-syntax-highlighting \
   zsh-users/zsh-completions
+
+# pyenv
+eval "$(pyenv init -)"
+eval "$(pyenv virtualenv-init -)"
 
 # Blur
 # if [[ $(ps --no-header -p $PPID -o comm) =~ '^yakuake|alacritty$' ]]; then

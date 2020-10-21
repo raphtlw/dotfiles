@@ -100,7 +100,7 @@
     <property name="AndroidInitConfigurator.V5" value="true" />
     <property name="BuildView.Splitter.Proportion" value="0.2899767" />
     <property name="ColorChooser.RecentColors" value="255-255-255-255" />
-    <property name="CommitChangeListDialog.DETAILS_SPLITTER_PROPORTION_2" value="0.6717635" />
+    <property name="CommitChangeListDialog.DETAILS_SPLITTER_PROPORTION_2" value="0.69317025" />
     <property name="ConstraintLayoutPreferenceShowMargins" value="true" />
     <property name="Darcula.SavedEditorTheme" value="_@user_Darcula" />
     <property name="Default.SavedEditorTheme" value="_@user_Default" />
@@ -133,12 +133,15 @@
     <property name="SPLIT_EDITOR_MODE_/home/raphael/Desktop/Newstry/android/app/src/main/res/menu/bottom_nav_menu.xml" value="SPLIT" />
     <property name="SPLIT_EDITOR_MODE_/home/raphael/Desktop/Newstry/android/app/src/main/res/navigation/mobile_navigation.xml" value="SPLIT" />
     <property name="SPLIT_EDITOR_MODE_/home/raphael/Desktop/Newstry/android/app/src/main/res/xml/preferences.xml" value="SPLIT" />
+    <property name="SPLIT_EDITOR_MODE_/home/raphael/Desktop/qscan/app/src/main/res/drawable/splash_screen.xml" value="SPLIT" />
     <property name="SPLIT_EDITOR_MODE_/home/raphael/Desktop/qscan/app/src/main/res/layout/activity_main.xml" value="SPLIT" />
     <property name="SPLIT_EDITOR_MODE_/home/raphael/Desktop/qscan/app/src/main/res/layout/activity_scanner.xml" value="SPLIT" />
     <property name="SPLIT_EDITOR_MODE_/home/raphael/Desktop/qscan/app/src/main/res/layout/custom_scanner.xml" value="SPLIT" />
     <property name="SPLIT_EDITOR_MODE_/home/raphael/Desktop/qscan/app/src/main/res/layout/fragment_home.xml" value="SPLIT" />
     <property name="SPLIT_EDITOR_MODE_/home/raphael/Desktop/qscan/app/src/main/res/layout/fragment_scan_history.xml" value="SPLIT" />
     <property name="SPLIT_EDITOR_MODE_/home/raphael/Desktop/qscan/app/src/main/res/layout/fragment_scanner.xml" value="SPLIT" />
+    <property name="SPLIT_EDITOR_MODE_/home/raphael/Desktop/qscan/app/src/main/res/layout/scan_history_empty.xml" value="SPLIT" />
+    <property name="SPLIT_EDITOR_MODE_/home/raphael/Desktop/qscan/app/src/main/res/layout/scan_history_item.xml" value="SPLIT" />
     <property name="SPLIT_EDITOR_MODE_/home/raphael/Desktop/qscan/app/src/main/res/menu/bottom_nav_menu.xml" value="SPLIT" />
     <property name="SPLIT_EDITOR_MODE_/home/raphael/Desktop/zorin/app/app/src/main/res/drawable/chatbubble_1.xml" value="DEACTIVATED" />
     <property name="SPLIT_EDITOR_MODE_/home/raphael/Desktop/zorin/app/app/src/main/res/drawable/circle.xml" value="FULL" />
@@ -169,7 +172,7 @@
     <property name="colorPickerCategoryProperty" value="MATERIAL_ACCENT_400" />
     <property name="com.intellij.history.integration.ui.views.DirectoryHistoryDialog.0" value="300" />
     <property name="decompiler.legal.notice.accepted" value="true" />
-    <property name="file.chooser.recent.files" value="$USER_HOME$/Desktop/qscan&#10;/home/raphael/Desktop/Newstry/android&#10;/home/raphael/Desktop/Zorin/app&#10;/home/raphael/Desktop/TrueTweet/android&#10;/home/raphael/Desktop/zorin/app&#10;/home/raphael/Desktop/zorin/app/app_icon_background.png&#10;/home/raphael/Desktop/zorin/app/app_icon_foreground.png" />
+    <property name="file.chooser.recent.files" value="$USER_HOME$/Desktop&#10;/home/raphael/Desktop/qscan/google_play/Background.png&#10;/home/raphael/Desktop/qscan/google_play/Icon.png&#10;/home/raphael/Desktop/qscan/google_play/Logo.png&#10;/home/raphael/Desktop/qscan&#10;/home/raphael/Desktop/Newstry/android&#10;/home/raphael/Desktop/Zorin/app&#10;/home/raphael/Desktop/TrueTweet/android&#10;/home/raphael/Desktop/zorin/app&#10;/home/raphael/Desktop/zorin/app/app_icon_background.png&#10;/home/raphael/Desktop/zorin/app/app_icon_foreground.png" />
     <property name="file.gist.reindex.count" value="56" />
     <property name="fileTypeChangedCounter" value="3" />
     <property name="inspector.open.All Attributes" value="true" />
@@ -177,7 +180,7 @@
     <property name="inspector.open.textAppearance" value="true" />
     <property name="installed.kotlin.plugin.version" value="1.4.10-release-Studio4.0-1" />
     <property name="kotlin-gradle-user-dirs" value="$USER_HOME$/.gradle" />
-    <property name="kotlin.lastUpdateCheck" value="1601747504141" />
+    <property name="kotlin.lastUpdateCheck" value="1603212839787" />
     <property name="kotlin.plugin.releaseDate" value="1.4.10-release-Studio4.0-1:2020-09-10" />
     <property name="lastTip" value="1" />
     <property name="newly.installed.api.level" value="30" />

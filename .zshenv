@@ -3,6 +3,7 @@
 # Path variables
 export PATH="$PATH:$HOME/bin"
 export PATH="$PATH:$HOME/.poetry/bin"
+export PATH="$PATH:$HOME/.pyenv/bin"
 export PATH="$PATH:$(ruby -e 'puts Gem.user_dir')/bin"
 export PATH="$PATH:$HOME/flutter/bin"
 export PATH="$PATH:$DENO_INSTALL/bin"
