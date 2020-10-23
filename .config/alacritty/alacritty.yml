@@ -594,3 +594,5 @@ mouse:
 
   # Print all received window events.
   #print_events: false
+
+include: ./font_size.yml
