@@ -1,3 +1,3 @@
-#!/usr/bin/sh
+#!/usr/bin/env sh
 
-java -jar $HOME/lib/minecraft/TLauncher*
+java -jar $HOME/.local/share/lib/tlauncher/TLauncher*.jar
