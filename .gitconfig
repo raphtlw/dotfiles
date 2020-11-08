@@ -9,3 +9,5 @@
 	rebase = false
 [core]
 	autocrlf = input
+[color]
+	ui = auto
