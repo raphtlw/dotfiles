@@ -1,0 +1,49 @@
+#!/usr/bin/env bash
+
+PROJECT="raphael-vps"
+ZONE="asia-southeast1-a"
+
+usage() {
+  cat << EOF
+  $(basename $0) -- Supercharge your computing power
+
+  Usage: $(basename $0) [options]
+
+  -h | --help       Print this information
+EOF
+}
+
+while [[ "$#" -gt 0 ]]; do
+  case $1 in
+    -h|--help)
+      usage
+      exit 0
+      ;;
+    --poweroff)
+      gcloud compute instances stop linux --project=$PROJECT --zone=$ZONE
+      exit 0
+      ;;
+    --poweron)
+      gcloud compute instances start linux --project=$PROJECT --zone=$ZONE
+      exit 0
+      ;;
+    *)
+      echo "Invalid option $1"
+      exit 1
+      ;;
+  esac
+  shift
+done
+
+echo
+echo -e "\e[1m\e[33m Supercharging your compute power! ⚡ \e[0m"
+echo
+
+# if the compute instance is already running
+if [ "$(gcloud compute instances describe linux --project=$PROJECT --format='yaml(status)' --zone=$ZONE)" = "status: RUNNING" ]; then
+  gcloud compute ssh linux --zone=$ZONE --project=$PROJECT -- -o ConnectTimeout=500
+else
+  gcloud compute instances start linux --project=$PROJECT --zone=$ZONE
+  gcloud compute ssh linux --zone=$ZONE --project=$PROJECT -- -o ConnectTimeout=500
+fi
+exit 0
