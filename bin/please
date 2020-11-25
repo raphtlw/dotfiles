@@ -1,3 +1,0 @@
-#!/usr/bin/env sh
-
-sudo $(fc -ln -1)

@@ -45,10 +45,6 @@ alias ll="l"
 alias vim="nvim"
 alias vi="nvim"
 
-function please() {
-  sudo $(fc -ln -1)
-}
-
 # Starship
 eval "$(starship init zsh)"
 
@@ -83,6 +79,9 @@ zinit wait lucid for \
 # pyenv
 eval "$(pyenv init -)"
 eval "$(pyenv virtualenv-init -)"
+
+# Shell functions
+source ~/.zsh/functions
 
 # Blur
 # if [[ $(ps --no-header -p $PPID -o comm) =~ '^yakuake|alacritty$' ]]; then

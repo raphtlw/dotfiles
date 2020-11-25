@@ -28,4 +28,3 @@ bold="\e[1m"
 echo -e "\n${red}███ ${green}███ ${yellow}███ ${blue}███ ${magenta}███ ${cyan}███ ${white}███${reset}"
 echo -e "${red}███ ${green}███ ${yellow}███ ${blue}███ ${magenta}███ ${cyan}███ ${white}███${reset}"
 echo -e "${lred}▀▀▀ ${lgreen}▀▀▀ ${lyellow}▀▀▀ ${lblue}▀▀▀ ${lmagenta}▀▀▀ ${lcyan}▀▀▀ ${lwhite}▀▀▀${reset}\n"
-

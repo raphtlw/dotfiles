@@ -1,3 +1,0 @@
-#!/usr/bin/env sh
-
-yay -Qdtq | yay -Rns -

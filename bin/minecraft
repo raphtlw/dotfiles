@@ -1,3 +1,0 @@
-#!/usr/bin/env sh
-
-java -jar $HOME/.local/share/lib/tlauncher/TLauncher*.jar
