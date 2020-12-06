@@ -28,9 +28,9 @@ function restore() {
   yadm pull origin master
 }
 
-function diskus() {
-  du -sh * .* --exclude={.,..} | sort -hr -S 50% --parallel=4
-}
+# function diskus() {
+#  du -sh * .* --exclude={.,..} | sort -hr -S 50% --parallel=4
+# }
 
 function minecraft() {
   java -jar $HOME/.local/share/lib/tlauncher/TLauncher*.jar
