@@ -1,7 +1,7 @@
 # Configuration for Alacritty, the GPU enhanced terminal emulator.
 
 import:
-  - /home/raphael/.config/alacritty/font_size.yml
+  - .config/alacritty/font_size.yml
 
 # Any items in the `env` entry below will be added as
 # environment variables. Some entries may override variables
