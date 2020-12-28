@@ -1,5 +1,12 @@
 # ~/.zshrc
 
+# Enable Powerlevel10k instant prompt. Should stay close to the top of ~/.zshrc.
+# Initialization code that may require console input (password prompts, [y/n]
+# confirmations, etc.) must go above this block; everything else may go below.
+if [[ -r "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh" ]]; then
+  source "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh"
+fi
+
 # Options
 setopt hist_ignore_all_dups
 setopt inc_append_history
@@ -46,11 +53,8 @@ alias vim="nvim"
 alias vi="nvim"
 alias xcopy="xclip -selection c"
 
-# Starship
-eval "$(starship init zsh)"
-
 # Disable Ctrl+s in terminal
-stty -ixon
+# stty -ixon
 
 # zinit plugin manager setup
 if [[ ! -f $HOME/.zinit/bin/zinit.zsh ]]; then
@@ -76,6 +80,7 @@ zinit wait lucid atload'_zsh_autosuggest_start' light-mode for \
 zinit wait lucid for \
   zsh-users/zsh-syntax-highlighting \
   zsh-users/zsh-completions
+zinit ice depth=1; zinit light romkatv/powerlevel10k
 
 # pyenv
 eval "$(pyenv init -)"
@@ -89,3 +94,6 @@ source ~/.zsh/functions
 #   for wid in $(xdotool search --pid $PPID); do
 #     xprop -f _KDE_NET_WM_BLUR_BEHIND_REGION 32c -set _KDE_NET_WM_BLUR_BEHIND_REGION 0 -id $wid; done
 # fi
+
+# To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
+[[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
