@@ -108,6 +108,7 @@ let g:lightline#bufferline#unnamed      = '[No Name]'
 let NERDTreeShowHidden = 1
 let g:lsc_auto_map = v:true
 let g:closetag_filenames = '*.html,*.xhtml,*.phtml,*.md,*.svelte'
+let g:coc_disable_startup_warning = 1
 
 " Lightline update
 autocmd BufWritePost,TextChanged,TextChangedI * call lightline#update()
