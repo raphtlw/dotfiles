@@ -25,6 +25,9 @@ Plug 'iamcco/markdown-preview.nvim', { 'do': { -> mkdp#util#install() }, 'for': 
 Plug 'plasticboy/vim-markdown'
 Plug 'dart-lang/dart-vim-plugin'
 Plug 'evanleck/vim-svelte'
+Plug 'pangloss/vim-javascript'
+Plug 'leafgarland/typescript-vim'
+Plug 'maxmellon/vim-jsx-pretty'
 " Theme
 Plug 'ntk148v/vim-horizon'
 
