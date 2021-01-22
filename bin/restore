@@ -1,0 +1,3 @@
+#!/usr/bin/env sh
+
+yadm pull origin master

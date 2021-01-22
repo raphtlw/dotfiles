@@ -1,0 +1,4 @@
+#!/usr/bin/env sh
+
+plasmashell --replace > /dev/null 2>&1 & disown
+kwin_x11 --replace > /dev/null 2>&1 & disown

@@ -1,0 +1,5 @@
+#!/usr/bin/env sh
+
+yadm add ~/bin
+yadm commit -am "backup $(date +%s)"
+yadm push origin master

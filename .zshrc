@@ -18,12 +18,17 @@ setopt auto_cd
 
 # Autocompletion
 fpath=(~/.zsh $fpath)
-autoload -Uz compinit 
-if [[ -n ${ZDOTDIR}/.zcompdump(#qN.mh+24) ]]; then
-	compinit;
-else
-	compinit -C;
-fi
+# autoload -Uz compinit
+# if [[ -n ${ZDOTDIR}/.zcompdump(#qN.mh+24) ]]; then
+# 	compinit
+# else
+# 	compinit -C
+# fi
+# autoload -Uz compinit
+# for dump in ~/.zcompdump(N.mh+24); do
+#   compinit
+# done
+# compinit -C
 zmodload -i zsh/complist
 zstyle ':completion:*' menu select
 zstyle ':completion:*' group-name ''
@@ -54,7 +59,7 @@ alias vi="nvim"
 alias xcopy="xclip -selection c"
 
 # Disable Ctrl+s in terminal
-# stty -ixon
+# [[ -o interactive ]] && stty -ixon
 
 # zinit plugin manager setup
 if [[ ! -f $HOME/.zinit/bin/zinit.zsh ]]; then
@@ -77,17 +82,18 @@ zinit light-mode for \
 # Plugins
 zinit wait lucid atload'_zsh_autosuggest_start' light-mode for \
   zsh-users/zsh-autosuggestions
-zinit wait lucid for \
+zinit wait lucid atload'zicompinit; zicdreplay' blockf for \
   zsh-users/zsh-syntax-highlighting \
   zsh-users/zsh-completions
-zinit ice depth=1; zinit light romkatv/powerlevel10k
+zinit ice depth=1
+zinit light romkatv/powerlevel10k
+zinit light lukechilds/zsh-better-npm-completion
 
 # pyenv
-eval "$(pyenv init -)"
-eval "$(pyenv virtualenv-init -)"
-
-# Shell functions
-source ~/.zsh/functions
+if (( $+commands[pyenv] )); then
+  eval "$(pyenv init - zsh --no-rehash)"
+  # eval "$(pyenv virtualenv-init - zsh --no-rehash)"
+fi
 
 # Blur
 # if [[ $(ps --no-header -p $PPID -o comm) =~ '^yakuake|alacritty$' ]]; then

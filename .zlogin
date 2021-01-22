@@ -1,4 +1,4 @@
-# This file is executed after zsh startup (after .zshrc is sourced)
+# This file is loaded in login shells after zsh startup (after .zshrc is sourced)
 
 {
   # Compile zcompdump, if modified, to increase startup speed.
