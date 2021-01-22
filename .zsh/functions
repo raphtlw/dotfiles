@@ -32,9 +32,9 @@ function restore() {
 #  du -sh * .* --exclude={.,..} | sort -hr -S 50% --parallel=4
 # }
 
-function minecraft() {
-  java -jar $HOME/.local/share/lib/tlauncher/TLauncher*.jar
-}
+# function minecraft() {
+#   java -jar $HOME/.local/share/lib/tlauncher/TLauncher*.jar
+# }
 
 function restart-kde() {
   plasmashell --replace > /dev/null 2>&1 & disown
