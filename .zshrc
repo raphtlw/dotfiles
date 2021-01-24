@@ -95,6 +95,11 @@ if (( $+commands[pyenv] )); then
   # eval "$(pyenv virtualenv-init - zsh --no-rehash)"
 fi
 
+# nvm
+if [ -f /usr/share/nvm/init-nvm.sh ]; then
+  source /usr/share/nvm/init-nvm.sh
+fi
+
 # Blur
 # if [[ $(ps --no-header -p $PPID -o comm) =~ '^yakuake|alacritty$' ]]; then
 #   for wid in $(xdotool search --pid $PPID); do
