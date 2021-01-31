@@ -57,6 +57,7 @@ alias ll="l"
 alias vim="nvim"
 alias vi="nvim"
 alias xcopy="xclip -selection c"
+alias neofetch="~/bin/neofetch"
 
 # Disable Ctrl+s in terminal
 # [[ -o interactive ]] && stty -ixon

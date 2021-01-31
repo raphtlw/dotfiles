@@ -1,0 +1,3 @@
+#!/usr/bin/env sh
+
+neofetch --ascii_distro arch "$@" | sed 's/ArcoLinux/Arch Linux x86_64/g'
