@@ -8,4 +8,4 @@ sudo rsync -aAXvPh --delete \
 --exclude=/home/*/.cache \
 --exclude=/home/*/.local/share/Trash \
 --exclude=/home/*/.thumbnails \
-/home /etc "/mnt/Backup/$(hostname)"
+/home /etc "/mnt/Backup/$(hostname)_$(date +%F)"
