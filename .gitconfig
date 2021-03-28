@@ -1,6 +1,7 @@
 [user]
 	email = raphpb1912@gmail.com
 	name = Raphael Tang
+	signingkey = 5FF3955162C13542B2713A1EBB0C8D0C7A5C3EC3
 [credential]
 	helper = store
 [alias]
