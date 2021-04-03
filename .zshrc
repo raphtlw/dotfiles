@@ -121,3 +121,7 @@ export NVM_DIR="$([ -z "${XDG_CONFIG_HOME-}"  ] && printf %s "${HOME}/.nvm" || p
 if [[ $(uname -r) =~ microsoft$ ]]; then
   export WINHOME="/mnt/c/Users/raphp"
 fi
+
+if [[ -n "$IS_WSL" || -n "$WSL_DISTRO_NAME" ]]; then
+  export WINHOME="/mnt/c/Users/raphp"
+fi
