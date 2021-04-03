@@ -116,3 +116,8 @@ export NVM_DIR="$([ -z "${XDG_CONFIG_HOME-}"  ] && printf %s "${HOME}/.nvm" || p
 
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
+
+# WSL specific stuff
+if [[ $(uname -r) =~ microsoft$ ]]; then
+  export WINHOME="/mnt/c/Users/raphp"
+fi
