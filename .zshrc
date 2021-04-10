@@ -118,7 +118,7 @@ export NVM_DIR="$([ -z "${XDG_CONFIG_HOME-}"  ] && printf %s "${HOME}/.nvm" || p
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
 
 # WSL specific stuff
-if [[ $(uname -r) =~ microsoft$ ]]; then
+if [[ -n "$IS_WSL" || -n "$WSL_DISTRO_NAME" ]]; then
   export WINHOME="/mnt/c/Users/raphp"
   
   alias explorer="explorer.exe"
