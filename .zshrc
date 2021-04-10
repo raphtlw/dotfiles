@@ -122,4 +122,5 @@ if [[ -n "$IS_WSL" || -n "$WSL_DISTRO_NAME" ]]; then
   export WINHOME="/mnt/c/Users/raphp"
   
   alias explorer="explorer.exe"
+  alias posh="powershell.exe -nologo"
 fi
