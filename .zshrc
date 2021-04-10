@@ -120,8 +120,6 @@ export NVM_DIR="$([ -z "${XDG_CONFIG_HOME-}"  ] && printf %s "${HOME}/.nvm" || p
 # WSL specific stuff
 if [[ $(uname -r) =~ microsoft$ ]]; then
   export WINHOME="/mnt/c/Users/raphp"
-fi
-
-if [[ -n "$IS_WSL" || -n "$WSL_DISTRO_NAME" ]]; then
-  export WINHOME="/mnt/c/Users/raphp"
+  
+  alias explorer="explorer.exe"
 fi
