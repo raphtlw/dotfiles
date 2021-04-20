@@ -6,6 +6,7 @@
 	helper = store
 [alias]
 	yolo = !git add -A && git commit -m \"$(curl --silent --fail http://whatthecommit.com/index.txt)\"
+	auto-commit = !git add -A && git commit -m \"$(git status --porcelain)\"
 [pull]
 	rebase = false
 [core]

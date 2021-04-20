@@ -123,4 +123,5 @@ if [[ -n "$IS_WSL" || -n "$WSL_DISTRO_NAME" ]]; then
   
   alias explorer="explorer.exe"
   alias posh="powershell.exe -nologo"
+  alias typora="/mnt/c/Program\ Files/Typora/Typora.exe"
 fi
