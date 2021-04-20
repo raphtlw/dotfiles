@@ -2,5 +2,5 @@
 
 yadm add ~/bin
 yadm add ~/.local/share/fonts
-yadm commit -am "backup $(date +%s)"
+yadm commit -am "$(yadm status --porcelain)"
 yadm push origin master
