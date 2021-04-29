@@ -34,7 +34,15 @@ Plug 'ntk148v/vim-horizon'
 call plug#end()
 
 " COC extensions
-let g:coc_global_extensions = ['coc-json', 'coc-git', 'coc-html', 'coc-rust-analyzer', 'coc-emmet', 'coc-tsserver']
+let g:coc_global_extensions = [
+  \'coc-json',
+  \'coc-git',
+  \'coc-html',
+  \'coc-rust-analyzer',
+  \'coc-emmet',
+  \'coc-tsserver',
+  \'coc-prettier'
+  \]
 
 " Settings
 syntax on
