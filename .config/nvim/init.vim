@@ -94,6 +94,12 @@ inoremap <silent> <C-V> <Esc> "+gP<CR>
 nmap <silent> <C-/> <plug>NERDCommenterToggle
 xmap <silent> <C-/> <plug>NERDCommenterToggle
 nnoremap <silent> <C-f> :Rg<CR>
+nnoremap <silent> <C-P> :Commands<CR>
+nmap <silent> <c-k> :wincmd k<CR>
+nmap <silent> <c-j> :wincmd j<CR>
+nmap <silent> <c-h> :wincmd h<CR>
+nmap <silent> <c-l> :wincmd l<CR>
+nmap <silent> <Leader>p :Files<CR>
 
 " Custom commands
 command! Settings :e $MYVIMRC
