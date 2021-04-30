@@ -37,6 +37,7 @@ fpath=(~/.zsh $fpath)
 zmodload -i zsh/complist
 zstyle ':completion:*' menu select
 zstyle ':completion:*' group-name ''
+TERM=xterm-256color # workaround for ZSH_AUTOSUGGEST_HIGHLIGHT_STYLE because of terminal colors
 ZSH_AUTOSUGGEST_HIGHLIGHT_STYLE='fg=240'
 ZSH_AUTOSUGGEST_USE_ASYNC=true
 
