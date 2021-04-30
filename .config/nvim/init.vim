@@ -28,6 +28,7 @@ Plug 'evanleck/vim-svelte'
 Plug 'pangloss/vim-javascript'
 Plug 'leafgarland/typescript-vim'
 Plug 'maxmellon/vim-jsx-pretty'
+Plug 'alampros/vim-styled-jsx'
 " Theme
 Plug 'ntk148v/vim-horizon'
 
@@ -41,7 +42,9 @@ let g:coc_global_extensions = [
   \'coc-rust-analyzer',
   \'coc-emmet',
   \'coc-tsserver',
-  \'coc-prettier'
+  \'coc-prettier',
+  \'coc-discord-rpc',
+  \'coc-pyright'
   \]
 
 " Settings
