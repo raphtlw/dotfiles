@@ -95,6 +95,7 @@ zinit wait lucid atload'zicompinit; zicdreplay' blockf for \
 zinit ice depth=1
 zinit light romkatv/powerlevel10k
 zinit light lukechilds/zsh-better-npm-completion
+zinit light agkozak/zsh-z
 
 # pyenv
 if (( $+commands[pyenv] )); then
@@ -108,6 +109,31 @@ fi
 # fi
 export NVM_DIR="$([ -z "${XDG_CONFIG_HOME-}"  ] && printf %s "${HOME}/.nvm" || printf %s "${XDG_CONFIG_HOME}/nvm")"
 [ -s "$NVM_DIR/nvm.sh"  ] && \. "$NVM_DIR/nvm.sh" # This loads nvm
+
+# fzf
+[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
+# color scheme
+local color00='#1C1E26'
+local color01='#232530'
+local color02='#2E303E'
+local color03='#6F6F70'
+local color04='#9DA0A2'
+local color05='#CBCED0'
+local color06='#DCDFE4'
+local color07='#E3E6EE'
+local color08='#E93C58'
+local color09='#E58D7D'
+local color0A='#EFB993'
+local color0B='#EFAF8E'
+local color0C='#24A8B4'
+local color0D='#DF5273'
+local color0E='#B072D1'
+local color0F='#E4A382'
+
+export FZF_DEFAULT_OPTS="$FZF_DEFAULT_OPTS"\
+" --color=bg+:$color01,bg:$color00,spinner:$color0C,hl:$color0D"\
+" --color=fg:$color04,header:$color0D,info:$color0A,pointer:$color0C"\
+" --color=marker:$color0C,fg+:$color06,prompt:$color0A,hl+:$color0D"
 
 # Blur
 # if [[ $(ps --no-header -p $PPID -o comm) =~ '^yakuake|alacritty$' ]]; then
