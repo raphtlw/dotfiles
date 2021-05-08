@@ -1,6 +1,6 @@
 #!/usr/bin/env sh
 
 yadm add ~/bin
-yadm add ~/.local/share/fonts -- ':!~/.local/share/fonts/panels/*' ':!~/.local/share/fonts/terminus/*'
+yadm add ~/.local/share/fonts -- ":!$HOME/.local/share/fonts/panels/*" ":!$HOME/.local/share/fonts/terminus/*"
 yadm commit -am "$(yadm status --porcelain)"
 yadm push origin master
