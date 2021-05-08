@@ -64,6 +64,7 @@ alias vim="nvim"
 alias vi="nvim"
 alias xcopy="xclip -selection c"
 alias sudoedit="EDITOR=nvim sudoedit"
+alias less="less -XR"
 
 # Disable Ctrl+s in terminal
 # [[ -o interactive ]] && stty -ixon
@@ -151,4 +152,6 @@ if [[ -n "$IS_WSL" || -n "$WSL_DISTRO_NAME" ]]; then
   alias explorer="explorer.exe"
   alias posh="powershell.exe -nologo"
   alias typora="/mnt/c/Program\ Files/Typora/Typora.exe"
+  alias xcopy="clip.exe"
 fi
+
