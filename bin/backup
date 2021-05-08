@@ -1,8 +1,8 @@
 #!/usr/bin/env sh
 
-HOME="/home/raphael"
-
 yadm add ~/bin
-yadm add ~/.local/share/fonts -- ":!$HOME/.local/share/fonts/panels/*" ":!$HOME/.local/share/fonts/terminus/*"
+yadm add ~/.local/share/fonts
+yadm reset -- ~/.local/share/fonts/panels/*
+yadm reset -- ~/.local/share/fonts/terminus/*
 yadm commit -am "$(yadm status --porcelain)"
 yadm push origin master
