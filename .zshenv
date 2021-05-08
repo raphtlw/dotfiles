@@ -23,3 +23,6 @@ export DENO_INSTALL="/home/raphael/.deno"
 
 # Load cargo environment variables
 [ -f "$HOME/.cargo/env" ] && . "$HOME/.cargo/env"
+
+# Load pyenv
+[ -x "$(command -v pyenv)" ] && eval "$(pyenv init --path)"
