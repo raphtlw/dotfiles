@@ -1,5 +1,0 @@
-#!/bin/sh
-
-until java -jar $HOME/.local/share/lib/tlauncher/TLauncher*.jar; do
-  sleep 1
-done
