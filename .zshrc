@@ -65,6 +65,9 @@ alias vi="nvim"
 alias xcopy="xclip -selection c"
 alias sudoedit="EDITOR=nvim sudoedit"
 alias less="less -XR"
+alias gp="git push"
+alias gc="git commit"
+alias ga="git add -A"
 
 # Disable Ctrl+s in terminal
 # [[ -o interactive ]] && stty -ixon
