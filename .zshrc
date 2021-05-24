@@ -145,6 +145,11 @@ export FZF_DEFAULT_OPTS="$FZF_DEFAULT_OPTS"\
 #     xprop -f _KDE_NET_WM_BLUR_BEHIND_REGION 32c -set _KDE_NET_WM_BLUR_BEHIND_REGION 0 -id $wid; done
 # fi
 
+# GPG Stuff
+
+# Fix GPG commit signing
+export GPG_TTY="$(tty)"
+
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
 
