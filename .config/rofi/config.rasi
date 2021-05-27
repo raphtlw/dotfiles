@@ -1,7 +1,8 @@
 configuration {
 	show-icons: true;
-	terminal: "kitty";
+	terminal: "alacritty";
 	sidebar-mode: false;
 	theme: "material.rasi";
 	display-drun: "❱";
+	dpi: 144;
 }

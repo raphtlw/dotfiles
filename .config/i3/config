@@ -206,13 +206,10 @@ for_window [urgent=latest] focus
 # AutoStart Programs
 
 # Polybar
-exec --no-startup-id ~/.config/polybar/launch.sh --shapes
+exec --no-startup-id ~/.config/polybar/launch.sh
 
 # Picom
 exec --no-startup-id picom
-
-# VirtualBox Things
-exec --no-startup-id /usr/bin/VBoxClient-all
 
 # Set Wallpaper
 exec_always --no-startup-id feh --bg-fill ~/Pictures/wallpaper.*
