@@ -43,6 +43,10 @@ exec --no-startup-id nm-applet
 bindsym XF86AudioRaiseVolume exec --no-startup-id "pactl set-sink-volume 0 +5%; notify-send 'volume up'"
 bindsym XF86AudioLowerVolume exec --no-startup-id "pactl set-sink-volume 0 -5%; notify-send 'volume down'"
 
+# Brightness controls
+bindsym XF86MonBrightnessUp exec --no-startup-id "brightnessctl s +5%; notify-send 'brightness up'"
+bindsym XF86MonBrightnessDown exec --no-startup-id "brightnessctl s 5%-; notify-send 'brightness down'"
+
 # Use Mouse+$mod to drag floating windows to their wanted position
 floating_modifier $mod
 
@@ -209,7 +213,7 @@ for_window [urgent=latest] focus
 exec --no-startup-id ~/.config/polybar/launch.sh
 
 # Picom
-exec --no-startup-id picom
+exec --no-startup-id picom --experimental-backends
 
 # Set Wallpaper
 exec_always --no-startup-id feh --bg-fill ~/Pictures/wallpaper.*

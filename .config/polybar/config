@@ -49,11 +49,12 @@ font-3 = FontAwesome:size=14;0
 
 modules-left = powermenu mpd
 modules-center = xwindow
-modules-right = volume wireless-network wired-network battery clock
+modules-right = pulseaudio-control wireless-network wired-network battery clock
 
 wm-restack = bspwm
 
 tray-position = right
+tray-detached = false
 
 [bar/bottom]
 monitor = eDP-1
@@ -91,7 +92,7 @@ font-5 = Termsynu:size=7;0
 
 modules-left = bspwm i3
 ;modules-center =
-modules-right = xbacklight cpu memory clock
+modules-right = backlight cpu memory clock
 ;modules-right = memory
 
 wm-restack = bspwm
@@ -389,6 +390,24 @@ format-background = #000
 format-foreground = #fff
 date = %%{F#bb}%Y-%m-%d%%{F-}  %%{F#ee}%H:%M%%{F-}
 
+[module/pulseaudio-control]
+type = custom/script
+tail = true
+format-underline = ${colors.cyan}
+label-padding = 2
+label-foreground = ${colors.foreground}
+
+# Icons mixed from Font Awesome 5 and Material Icons
+# You can copy-paste your options for each possible action, which is more
+# trouble-free but repetitive, or apply only the relevant ones (for example
+# --sink-blacklist is only needed for next-sink).
+exec = pulseaudio-control --icons-volume " , " --icon-muted " " --sink-nicknames-from "device.description" --sink-nickname "alsa_output.pci-0000_00_1b.0.analog-stereo:  Speakers" --sink-nickname "alsa_output.usb-Kingston_HyperX_Virtual_Surround_Sound_00000000-00.analog-stereo:  Headphones" listen
+click-right = exec pavucontrol &
+click-left = pulseaudio-control togmute
+click-middle = pulseaudio-control --sink-blacklist "alsa_output.pci-0000_01_00.1.hdmi-stereo-extra2" next-sink
+scroll-up = pulseaudio-control --volume-max 130 up
+scroll-down = pulseaudio-control --volume-max 130 down
+
 [module/volume]
 type = internal/alsa
 speaker-mixer = Speaker
@@ -398,7 +417,7 @@ headphone-id = 9
 format-volume = <ramp-volume> <label-volume>
 
 label-volume = volume %percentage%%
-label-volume-foreground = #ff
+label-volume-foreground = #fff
 
 format-muted-foreground = #66
 label-muted = 🔇 muted

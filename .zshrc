@@ -162,4 +162,3 @@ if [[ -n "$IS_WSL" || -n "$WSL_DISTRO_NAME" ]]; then
   alias typora="/mnt/c/Program\ Files/Typora/Typora.exe"
   alias xcopy="clip.exe"
 fi
-
