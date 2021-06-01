@@ -148,7 +148,7 @@ export FZF_DEFAULT_OPTS="$FZF_DEFAULT_OPTS"\
 # GPG Stuff
 
 # Fix GPG commit signing
-export GPG_TTY="$(tty)"
+export GPG_TTY=$TTY
 
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
