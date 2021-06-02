@@ -229,6 +229,9 @@ exec --no-startup-id picom --experimental-backends
 # Set Wallpaper
 exec_always --no-startup-id feh --bg-fill ~/Pictures/wallpaper.*
 
+# Clipboard manager daemon
+exec --no-startup-id greenclip daemon
+
 #############################
 ### settings for i3-gaps: ###
 #############################
