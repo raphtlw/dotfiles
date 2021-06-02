@@ -388,7 +388,7 @@ interval = 5
 format-padding = 5
 format-background = #000
 format-foreground = #fff
-date = %%{F#bb}%Y-%m-%d%%{F-}  %%{F#ee}%H:%M%%{F-}
+date = %%{F#bb}%Y-%m-%d%%{F-}  %%{F#ee}%I:%M %p%%{F-}
 
 [module/pulseaudio-control]
 type = custom/script
