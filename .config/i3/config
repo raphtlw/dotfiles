@@ -210,7 +210,7 @@ for_window [urgent=latest] focus
 # AutoStart Programs
 
 # Polybar
-exec --no-startup-id ~/.config/polybar/launch.sh
+exec_always --no-startup-id ~/.config/polybar/launch.sh
 
 # Picom
 exec --no-startup-id picom --experimental-backends
