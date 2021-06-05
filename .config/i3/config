@@ -72,12 +72,6 @@ bindsym $mod+Print --release exec --no-startup-id i3-scrot -w
 bindsym $mod+Shift+Print --release exec --no-startup-id i3-scrot -s
 
 # change focus
-bindsym $mod+j focus left
-bindsym $mod+k focus down
-bindsym $mod+l focus up
-bindsym $mod+semicolon focus right
-
-# alternatively, you can use the cursor keys:
 bindsym $mod+Left focus left
 bindsym $mod+Down focus down
 bindsym $mod+Up focus up
@@ -198,6 +192,9 @@ bindsym $mod+r mode "resize"
 
 # Polybar toggle shortcut
 bindsym $mod+b exec --no-startup-id polybar-msg cmd toggle
+
+# Lock screen
+bindsym $mod+l exec --no-startup-id ~/bin/lock
 
 # Window Controls
 
