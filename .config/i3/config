@@ -204,6 +204,12 @@ for_window [class="^.*"] border pixel 1
 # switch to workspace with urgent window automatically
 for_window [urgent=latest] focus
 
+# default workspace layout mode for new containers
+workspace_layout tabbed
+
+# window title alignment
+title_align center
+
 # Window decoration colors
 
 # class                 border  backgr. text    indicator child_border
@@ -235,7 +241,7 @@ exec --no-startup-id greenclip daemon
 
 # Set inner/outer gaps
 gaps inner 14
-gaps outer -2
+gaps outer 0
 
 # Additionally, you can issue commands with the following syntax. This is useful to bind keys to changing the gap size.
 # gaps inner|outer current|all set|plus|minus <px>
