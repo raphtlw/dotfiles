@@ -10,6 +10,7 @@ export PATH="$PATH:$DENO_INSTALL/bin"
 export PATH="$PATH:$HOME/.cargo/bin"
 export PATH="$PATH:$HOME/.npm-global/bin"
 export PATH="$PATH:$HOME/.deno/bin/deno"
+export PATH="$PATH:$HOME/.local/bin"
 
 export EDITOR="code"
 export BROWSER="google-chrome-stable"

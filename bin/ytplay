@@ -1,0 +1,50 @@
+#!/usr/bin/env bash
+
+# ----------------------------------------------------------------------------
+# ytplay: a command line program for displaying YouTube videos as ASCII output
+# ----------------------------------------------------------------------------
+# Dependencies:
+# youtube-dl (https://github.com/ytdl-org/youtube-dl)
+# streamlink (https://github.com/streamlink/streamlink)
+# mplayer
+# mpv
+
+CLEAR='\033[0m'
+RED='\033[0;31m'
+
+function usage() {
+  if [ -n "$1" ]; then
+    echo -e "${RED}👉 $1${CLEAR}\n";
+  fi
+  
+  cat << EOF
+  Usage: $(basename $0) [REQUIRED -u url] [-n]
+    -h, --help     Show this message
+    -u, --url      (Required) URL
+    -n, --nocaca   Won't display colored output, uses aalib instead
+  
+  Examples: $(basename $0) --nocaca -u "https://www.youtube.com/watch?v=5qap5aO4i9A"
+EOF
+}
+
+# parse params
+while [[ "$#" > 0 ]]; do case $1 in
+      -h|--help)   usage; exit 0 ;;
+      -u|--url)    URL="$2"; shift; shift ;;
+      -n|--nocaca) NOCACA=1; shift ;;
+      *)           usage "Unknown parameter passed: $1"; exit 1 ;;
+esac; done
+
+echo $NOCACA
+echo $URL
+
+if [ -z "$URL" ]; then
+  usage "No URL specified"
+  exit 1
+fi
+
+if [ -n "$NOCACA" ]; then
+  youtube-dl "$URL" -f worst -o - | mplayer -vo aa -monitorpixelaspect 0.5 -
+else
+  streamlink "$URL" worst --player mpv -a "--vo=caca"
+fi
