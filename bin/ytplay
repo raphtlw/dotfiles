@@ -44,14 +44,14 @@ fi
 
 if [ -n "$CACA" ]; then
   # if caca is specified
-  streamlink "$URL" worst --player mpv -a "--vo=caca"
+  streamlink "$URL" best --player mpv -a "--vo=caca"
   exit 0
 elif [ -n "$CLASSIC" ]; then
   # if classic is specified
-  youtube-dl "$URL" -f worst -o - | mplayer -vo aa -monitorpixelaspect 0.5 -
+  youtube-dl "$URL" -f best -o - | mplayer -vo aa -monitorpixelaspect 0.5 -
   exit 0
 else
   # else, play the video inline directly in the terminal with colors
-  youtube-dl --quiet --no-warnings "$URL" -f worst -o - | mpv --vo=tct -
+  youtube-dl --quiet --no-warnings "$URL" -f best -o - | mpv --vo=tct -
   exit 0
 fi
