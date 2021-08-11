@@ -534,7 +534,7 @@ mouse:
 #
 # If the same trigger is assigned to multiple actions, all of them are executed
 # at once.
-#key_bindings:
+key_bindings:
   #- { key: Paste,                                action: Paste          }
   #- { key: Copy,                                 action: Copy           }
   #- { key: L,         mods: Control,             action: ClearLogNotice }
@@ -598,6 +598,7 @@ mouse:
   #- { key: Add,      mods: Control,                 action: IncreaseFontSize }
   #- { key: Subtract, mods: Control,                 action: DecreaseFontSize }
   #- { key: Minus,    mods: Control,                 action: DecreaseFontSize }
+  - { key: F11, command: { program: "/bin/sh", args: ["-c", "wmctrl -ir $(xdotool getwindowfocus) -b toggle,fullscreen" ] } }
 
   # (Windows only)
   #- { key: Return,   mods: Alt,           action: ToggleFullscreen }

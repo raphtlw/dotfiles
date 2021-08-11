@@ -1,0 +1,8 @@
+#!/usr/bin/env bash
+
+tmux new-session \; \
+  send-keys "youtube-dl -q --no-warnings 'https://www.youtube.com/watch?v=5qap5aO4i9A' -o - | mpv --vo=tct -" C-m \; \
+  split-window -v \; \
+  send-keys "fireplace" C-m \; \
+  split-window -h \; \
+  send-keys "cava" C-m \;
