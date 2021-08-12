@@ -1,8 +1,23 @@
 #!/usr/bin/env bash
 
+# -------------------------------------------------------------------------------------
+# lofi-screen: a utility script that launches my favourite lo-fi stream in the terminal
+#  with all the cool command line toys that I love ^_^
+# -------------------------------------------------------------------------------------
+# Dependencies:
+# tmux
+# ytplay
+# cacafire
+# cava
+# unimatrix
+
 tmux new-session -s "lofi" \; \
-  send-keys "youtube-dl --quiet --no-warnings 'https://www.youtube.com/watch?v=5qap5aO4i9A' -o - | mpv --vo=tct -" C-m \; \
+  send-keys "ytplay -u 'https://www.youtube.com/watch?v=5qap5aO4i9A'" C-m \; \
   split-window -v \; \
   send-keys "CACA_DRIVER=ncurses cacafire" C-m \; \
   split-window -h \; \
-  send-keys "cava" C-m \;
+  send-keys "cava" C-m \; \
+  select-pane -t 0 \; \
+  split-window -h \; \
+  send-keys "unimatrix" C-m \; \
+  resize-pane -t 0 -x 60% -y 62%
