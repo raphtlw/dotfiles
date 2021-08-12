@@ -11,24 +11,24 @@
 CLEAR='\033[0m'
 RED='\033[0;31m'
 
-function usage() {
+usage() {
   if [ -n "$1" ]; then
     echo -e "${RED}👉 $1${CLEAR}\n"
   fi
   
   cat << EOF
-  Usage: $(basename $0) [REQUIRED -u url] [options]
+  Usage: $(basename "$0") [REQUIRED -u url] [options]
     -h, --help     Show this message
     -u, --url      (Required) URL
     --classic      Classic mode, which plays in black and white using aalib instead
     -c, --caca     Uses libcaca to display output instead
   
-  Examples: $(basename $0) --classic -u "https://www.youtube.com/watch?v=5qap5aO4i9A"
+  Examples: $(basename "$0") --classic -u "https://www.youtube.com/watch?v=5qap5aO4i9A"
 EOF
 }
 
 # parse params
-while [[ "$#" > 0 ]]; do case $1 in
+while [[ "$#" -gt 0 ]]; do case $1 in
       -h|--help)   usage; exit 0 ;;
       -u|--url)    URL="$2"; shift; shift ;;
       --classic)   CLASSIC=1; shift ;;
