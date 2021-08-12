@@ -5,7 +5,6 @@
 # ----------------------------------------------------------------------------
 # Dependencies:
 # youtube-dl (https://github.com/ytdl-org/youtube-dl)
-# streamlink (https://github.com/streamlink/streamlink)
 # mplayer
 # mpv
 
@@ -52,6 +51,10 @@ elif [ -n "$CLASSIC" ]; then
   exit 0
 else
   # else, play the video inline directly in the terminal with colors
-  youtube-dl --quiet --no-warnings "$URL" -f best -o - | mpv --vo=tct -
+  until youtube-dl --quiet --no-warnings "$URL" -f best -o - | mpv --vo=tct --really-quiet -
+  do
+    echo "Stream has stopped, restarting..."
+    sleep 1
+  done
   exit 0
 fi
