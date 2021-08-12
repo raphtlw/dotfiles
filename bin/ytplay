@@ -43,7 +43,7 @@ fi
 
 if [ -n "$CACA" ]; then
   # if caca is specified
-  streamlink "$URL" best --player mpv -a "--vo=caca"
+  youtube-dl "$URL" -f best -o - | mpv --vo=caca -
   exit 0
 elif [ -n "$CLASSIC" ]; then
   # if classic is specified
