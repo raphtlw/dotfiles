@@ -1,0 +1,48 @@
+#!/usr/bin/env bash
+
+# -------------------------------------------------------------------------
+# mount-macOS-Desktop: A helper script for mounting and unmounting my macOS
+#  vm's shared folder
+# 
+# Author: Raphael Tang <raphpb1912@gmail.com>
+# -------------------------------------------------------------------------
+# Dependencies:
+#  - sshfs
+#  - fusermount
+
+CLEAR='\033[0m'
+RED='\033[0;31m'
+
+function usage() {
+  if [ -n "$1" ]; then
+    echo -e "${RED}👉 $1${CLEAR}\n";
+  fi
+  
+  cat << EOF
+  Usage: "$(basename $0)" [REQUIRED -u url] [-n]
+    -h, --help     Show this message
+    -u, --unmount  Unmount the folder
+  
+  Example: "$(basename $0)" -u
+EOF
+}
+
+# parse params
+while [[ "$#" > 0 ]]; do case $1 in
+      -h|--help)     usage; exit 0 ;;
+      -u|--unmount)  DO_UNMOUNT=1; shift ;;
+      *)             usage "Unknown parameter passed: $1"; exit 1 ;;
+esac; done
+
+MNT_FOLDER_NAME="macOS-Desktop"
+MNT_FOLDER_PATH="/tmp/$MNT_FOLDER_NAME"
+VM_ADDRESS="raphael@192.168.122.242"
+
+if [ -n "$DO_UNMOUNT" ]; then
+  unlink "$HOME/Desktop/$MNT_FOLDER_NAME"
+  fusermount -u "$MNT_FOLDER_PATH"
+else
+  mkdir -p "$MNT_FOLDER_PATH"
+  sshfs "$VM_ADDRESS:/Users/raphael/Desktop" "$MNT_FOLDER_PATH"
+  ln -s "$MNT_FOLDER_PATH" "$HOME/Desktop/$MNT_FOLDER_NAME"
+fi
