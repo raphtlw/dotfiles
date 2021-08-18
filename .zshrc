@@ -104,7 +104,8 @@ zinit light agkozak/zsh-z
 
 # pyenv
 if (( $+commands[pyenv] )); then
-  eval "$(pyenv init - zsh --no-rehash)"
+  eval "$(pyenv init -)"
+  # eval "$(pyenv init - zsh --no-rehash)"
   # eval "$(pyenv virtualenv-init - zsh --no-rehash)"
 fi
 
