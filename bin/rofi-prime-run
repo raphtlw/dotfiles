@@ -1,0 +1,3 @@
+#!/bin/sh
+
+rofi -modi drun -show drun -run-command 'prime-run {cmd}'
