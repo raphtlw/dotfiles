@@ -8,7 +8,7 @@
 
 [Window]
 width=1920
-height=981
+height=1011
 maximized=0
 
 [Desktop]
@@ -62,7 +62,7 @@ main_terminal-key=65473
 main_save_tabs-b=1
 main_exit-key=113
 main_exit-keymod=4
-panel1_show-s=////home/raphael/Videos
+panel1_show-s=////home/raphael/Desktop/Photos
 panel1_show-x=0
 panel1_show-key=49
 panel1_show-keymod=4
@@ -342,7 +342,7 @@ panel1_detcol_owner0-b=2
 panel1_detcol_date0-b=2
 panel1_slider_positions0-s=0
 panel1_slider_positions0-x=367
-panel1_slider_positions0-y=46
+panel1_slider_positions0-y=67
 panel1_tool_l-child=cstm_6012828b
 cstm_6012828b-next=cstm_2cd17ec2
 cstm_6012828b-tool=2

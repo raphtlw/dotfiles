@@ -35,8 +35,8 @@ exec --no-startup-id xss-lock --transfer-sleep-lock -- i3lock --nofork
 exec --no-startup-id nm-applet
 
 # Use pactl to adjust volume in PulseAudio.
-bindsym XF86AudioRaiseVolume exec --no-startup-id "pactl set-sink-volume @DEFAULT_SINK@ +5%; notify-send 'volume up'"
-bindsym XF86AudioLowerVolume exec --no-startup-id "pactl set-sink-volume @DEFAULT_SINK@ -5%; notify-send 'volume down'"
+bindsym XF86AudioRaiseVolume exec --no-startup-id "pactl set-sink-volume @DEFAULT_SINK@ +5% && notify-send 'volume up'"
+bindsym XF86AudioLowerVolume exec --no-startup-id "pactl set-sink-volume @DEFAULT_SINK@ -5% && notify-send 'volume down'"
 
 # Brightness controls
 bindsym XF86MonBrightnessUp exec --no-startup-id "brightnessctl s +5%; notify-send 'brightness up'"
@@ -46,7 +46,7 @@ bindsym XF86MonBrightnessDown exec --no-startup-id "brightnessctl s 5%-; notify-
 bindsym XF86AudioMute exec --no-startup-id "pactl set-sink-mute @DEFAULT_SINK@ toggle"
 
 # Mic mute key
-bindsym XF86AudioMicMute exec --no-startup-id "pactl set-source-mute @DEFAULT_SOURCE@ toggle"
+bindsym XF86AudioMicMute exec --no-startup-id ~/.config/i3/i3-toggle-mute.sh
 
 # ::  ASUS G14 Specific keybinds  ::
 # ::  --------------------------  ::
