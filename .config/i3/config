@@ -221,7 +221,7 @@ bindsym $mod+l exec --no-startup-id ~/bin/lock
 for_window [class="^.*"] border pixel 1
 
 # switch to workspace with urgent window automatically
-for_window [urgent=latest] focus
+# for_window [urgent=latest] focus
 
 # default workspace layout mode for new containers
 workspace_layout tabbed
