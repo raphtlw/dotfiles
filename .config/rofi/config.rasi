@@ -1,8 +1,6 @@
 configuration {
-	show-icons: true;
-	terminal: "alacritty";
-	sidebar-mode: false;
-	theme: "material.rasi";
-	display-drun: "❱";
-	dpi: 144;
+  terminal: "i3-sensible-terminal";
+  sidebar-mode: false;
+  theme: "theme.rasi";
+  dpi: 120;
 }

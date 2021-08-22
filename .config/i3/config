@@ -35,17 +35,36 @@ exec --no-startup-id xss-lock --transfer-sleep-lock -- i3lock --nofork
 exec --no-startup-id nm-applet
 
 # Use pactl to adjust volume in PulseAudio.
-# set $refresh_i3status killall -SIGUSR1 i3status
-# bindsym XF86AudioRaiseVolume exec --no-startup-id pactl set-sink-volume @DEFAULT_SINK@ +10% && $refresh_i3status
-# bindsym XF86AudioLowerVolume exec --no-startup-id pactl set-sink-volume @DEFAULT_SINK@ -10% && $refresh_i3status
-# bindsym XF86AudioMute exec --no-startup-id pactl set-sink-mute @DEFAULT_SINK@ toggle && $refresh_i3status
-# bindsym XF86AudioMicMute exec --no-startup-id pactl set-source-mute @DEFAULT_SOURCE@ toggle && $refresh_i3status
-bindsym XF86AudioRaiseVolume exec --no-startup-id "pactl set-sink-volume 0 +5%; notify-send 'volume up'"
-bindsym XF86AudioLowerVolume exec --no-startup-id "pactl set-sink-volume 0 -5%; notify-send 'volume down'"
+bindsym XF86AudioRaiseVolume exec --no-startup-id "pactl set-sink-volume @DEFAULT_SINK@ +5%; notify-send 'volume up'"
+bindsym XF86AudioLowerVolume exec --no-startup-id "pactl set-sink-volume @DEFAULT_SINK@ -5%; notify-send 'volume down'"
 
 # Brightness controls
 bindsym XF86MonBrightnessUp exec --no-startup-id "brightnessctl s +5%; notify-send 'brightness up'"
 bindsym XF86MonBrightnessDown exec --no-startup-id "brightnessctl s 5%-; notify-send 'brightness down'"
+
+# Volume mute key
+bindsym XF86AudioMute exec --no-startup-id "pactl set-sink-mute @DEFAULT_SINK@ toggle"
+
+# Mic mute key
+bindsym XF86AudioMicMute exec --no-startup-id "pactl set-source-mute @DEFAULT_SOURCE@ toggle"
+
+# ::  ASUS G14 Specific keybinds  ::
+# ::  --------------------------  ::
+
+# Keyboard Backlight controls
+set $backlight_path ~/.config/i3/i3-kb-backlight.sh
+set $brightness_step 1
+bindsym XF86KbdBrightnessUp   exec --no-startup-id "$backlight_path -n increase $brightness_step"
+bindsym XF86KbdBrightnessDown exec --no-startup-id "$backlight_path -n decrease $brightness_step"
+
+# profile control
+bindsym XF86Launch4 exec --no-startup-id "asusctl profile -n"
+
+# aura control
+bindsym XF86Launch3 exec --no-startup-id "asusctl led-mode -n"
+
+# touchpad toggle
+bindsym XF86TouchpadToggle exec --no-startup-id "~/bin/touchpad-toggle.sh"
 
 # Use Mouse+$mod to drag floating windows to their wanted position
 floating_modifier $mod
@@ -212,12 +231,16 @@ title_align center
 
 # Window decoration colors
 
+set $fg #ffffff
+set $bg #141115
+set $ac #276FBF
+
 # class                 border  backgr. text    indicator child_border
-client.focused          #4c7899 #285577 #ffffff #2e9ef4   #285577
-client.focused_inactive #333333 #5f676a #ffffff #484e50   #5f676a
-client.unfocused        #333333 #222222 #888888 #292d2e   #222222
-client.urgent           #2f343a #900000 #ffffff #900000   #900000
-client.placeholder      #000000 #0c0c0c #ffffff #000000   #0c0c0c
+client.focused          $ac     $ac     $fg     $ac       $ac
+client.focused_inactive $bg     #0F4889 $fg     $bg       $bg
+client.unfocused        $bg     $bg     $888888 $bg       $bg
+client.urgent           #2f343a #900000 $fg     #900000   #900000
+client.placeholder      #000000 #0c0c0c $fg     #000000   #0c0c0c
 
 client.background       #ffffff
 

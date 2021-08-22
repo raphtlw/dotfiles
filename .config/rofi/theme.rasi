@@ -1,0 +1,90 @@
+configuration {
+    display-drun:   "apps";
+    display-run:    "run";
+    show-icons:     true;
+}
+
+* {
+    font: "SF Pro Display 12";
+    padding: 3px 5px;
+    background-color: rgba(0,0,0,0);
+    color: #fff;
+    height: 60%;
+    width: 50%;
+    
+    actbg:                      #e3e3e3;
+    winbg:						#0F1212;
+    
+    selected-normal-foreground: @winbg;
+    selected-normal-background: @actbg;
+}
+
+window {
+    background-color: rgba(0,0,0,0.6);
+    padding: 16px;
+    children: [mainbox];
+}
+
+#mainbox {
+    border:  					0;
+	orientation:				vertical;
+	children: 					[ entry,message,listview,mode-switcher ];
+}
+
+#entry {
+	expand: 					false;
+	text-color:					@normal-foreground;
+    padding: 					10px 0px 10px 0px ; 				//padding between two lines
+	border-color: 				grey;
+	margin:						20px 20px 0px 20px;
+}
+
+#sidebar {
+	expand: false;
+}
+
+#textbox {  													// mesg box
+	horizontal-align: 			0;
+	background-color: 			silver;
+    padding: 					10px 20px 10px 20px ; 				
+	text-color:                 #000;
+}
+
+#listview {
+    border:       				0px 0px 0px ;
+    border-color: 				grey;
+	padding:                    20 30 70 30;
+}
+
+#mode-switcher {
+    /* border:       				1px 0px 0px 0px; */
+   	/* border-color: 				grey; */
+	/* padding:                    	0 30 10 30; */
+	margin:						10px 10px 10px 10px;
+}
+
+button { 
+	padding: 8px; 
+}
+
+#button.selected {
+    background-color: 			@selected-normal-background;
+    text-color:       			@selected-normal-foreground;
+    border-radius: 4px;
+}
+
+listview {
+    padding: 20px 5px 0px 5px;
+    spacing: 0.2em;
+}
+
+#element {
+    padding: 4px;
+}
+
+#element selected {
+  border-radius: 6px;
+  background-color: rgba(50,50,50,0.5);
+}
+
+/* vim:ft=css
