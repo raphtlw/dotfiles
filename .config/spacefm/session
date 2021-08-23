@@ -8,7 +8,7 @@
 
 [Window]
 width=1920
-height=1035
+height=1011
 maximized=0
 
 [Desktop]
@@ -64,7 +64,7 @@ main_terminal-key=65473
 main_save_tabs-b=1
 main_exit-key=113
 main_exit-keymod=4
-panel1_show-s=////home/raphael/Desktop/Projects/personal-blog
+panel1_show-s=////home/raphael/Downloads
 panel1_show-x=0
 panel1_show-key=49
 panel1_show-keymod=4
@@ -133,7 +133,7 @@ task_show_manager-b=2
 task_hide_manager-b=1
 task_pop_all-b=2
 task_pop_top-s=1920
-task_pop_top-z=981
+task_pop_top-z=1011
 task_pop_top-b=2
 task_pop_above-b=2
 task_pop_stick-b=2
@@ -342,7 +342,7 @@ panel1_detcol_owner0-b=2
 panel1_detcol_date0-b=2
 panel1_slider_positions0-s=46
 panel1_slider_positions0-x=367
-panel1_slider_positions0-y=67
+panel1_slider_positions0-y=112
 panel1_tool_l-child=cstm_6012828b
 cstm_6012828b-next=cstm_2cd17ec2
 cstm_6012828b-tool=2
@@ -574,5 +574,4 @@ panel1_show_dirtree0-b=1
 drag_action-x=0
 app_dlg-x=600
 app_dlg-y=600
-panel1_show_devmon0-b=1
 

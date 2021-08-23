@@ -253,7 +253,10 @@ exec_always --no-startup-id feh --bg-fill ~/Pictures/wallpaper.*
 exec --no-startup-id greenclip daemon
 
 # imwheel daemon
-exec --no-startup-id imwheel
+exec --no-startup-id imwheel -b 45
+
+# PolicyKit authentication agent
+exec --no-startup-id /usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1 &
 
 #############################
 ### settings for i3-gaps: ###

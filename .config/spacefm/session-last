@@ -8,7 +8,7 @@
 
 [Window]
 width=1920
-height=1011
+height=1035
 maximized=0
 
 [Desktop]
@@ -57,12 +57,14 @@ move_dlg_confirm_create-b=1
 status_info-b=1
 main_new_window-key=110
 main_new_window-keymod=4
+main_search-x=1920
+main_search-y=1011
 main_terminal-s=i3-sensible-terminal
 main_terminal-key=65473
 main_save_tabs-b=1
 main_exit-key=113
 main_exit-keymod=4
-panel1_show-s=////home/raphael/Desktop/Photos
+panel1_show-s=////home/raphael/Desktop/Projects/personal-blog
 panel1_show-x=0
 panel1_show-key=49
 panel1_show-keymod=4
@@ -242,7 +244,6 @@ prop_perm-keymod=4
 panel1_show_toolbox-b=1
 panel1_show_devmon-b=1
 panel1_show_dirtree-b=1
-panel1_show_book-b=2
 panel1_show_sidebar-b=2
 panel1_list_detailed-x=0
 panel1_list_detailed-y=0
@@ -330,7 +331,6 @@ cstm_7a25a4d8-z=/home/raphael
 cstm_7a25a4d8-label=Home
 cstm_7a25a4d8-parent=main_book
 panel1_show_toolbox0-b=1
-panel1_show_book0-b=2
 panel1_show_sidebar0-b=2
 panel1_detcol_name0-y=1820
 panel1_detcol_name0-b=1
@@ -340,7 +340,7 @@ panel1_detcol_type0-b=2
 panel1_detcol_perm0-b=2
 panel1_detcol_owner0-b=2
 panel1_detcol_date0-b=2
-panel1_slider_positions0-s=0
+panel1_slider_positions0-s=46
 panel1_slider_positions0-x=367
 panel1_slider_positions0-y=67
 panel1_tool_l-child=cstm_6012828b
