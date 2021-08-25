@@ -1,11 +1,16 @@
 #!/bin/sh
 
 # init keyring
-eval $(/usr/bin/gnome-keyring-daemon --start --daemonize --components=gpg,pkcs11,secrets,ssh)
+eval $(/usr/bin/gnome-keyring-daemon --start --components=gpg,pkcs11,secrets,ssh)
 export GNOME_KEYRING_CONTROL GNOME_KEYRING_PID GPG_AGENT_INFO SSH_AUTH_SOCK
 
-nvidia-settings --load-config-only
+source /etc/X11/xinit/xinitrc.d/50-systemd-user.sh
+
+# load nvidia settings
+nvidia-settings --load-config-only || echo "nvidia-settings not found."
 
 export LIBVIRT_DEFAULT_URI=qemu:///system
+
+xrdb -merge ~/.Xresources
 
 exec i3
