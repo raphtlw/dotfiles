@@ -1,0 +1,4 @@
+[Icon Theme]
+Name=macOSBigSur
+Comment=macOS Big Sur Pointers
+Inherits="hicolor"

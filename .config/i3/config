@@ -247,7 +247,7 @@ exec_always --no-startup-id ~/.config/polybar/launch.sh
 exec --no-startup-id picom --experimental-backends
 
 # Set Wallpaper
-exec_always --no-startup-id feh --bg-fill ~/Pictures/wallpaper.*
+exec_always --no-startup-id feh --bg-fill ~/Pictures/wallpaper
 
 # Clipboard manager daemon
 exec --no-startup-id greenclip daemon
