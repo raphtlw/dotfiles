@@ -1,0 +1,11 @@
+! DPI setting
+{% if yadm.hostname == "surface" %}
+Xft.dpi: 144
+rofi.dpi: 144
+{% endif %}
+{% if yadm.hostname == "g14" %}
+Xft.dpi: 120
+rofi.dpi: 120
+{% endif %}
+
+Xcursor.theme: macOSBigSur

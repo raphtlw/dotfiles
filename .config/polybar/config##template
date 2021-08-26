@@ -17,15 +17,6 @@
 ;==========================================================
 
 [colors]
-; ;background = ${xrdb:color0:#222}
-; background = #222
-; background-alt = #444
-; ;foreground = ${xrdb:color7:#222}
-; foreground = #dfdfdf
-; foreground-alt = #555
-; primary = #ffb52a
-; secondary = #e60053
-; alert = #bd2c40
 background = #aafff
 background-alt = #323a47
 foreground = #dfdfdf
@@ -41,7 +32,12 @@ alert = #bd2c40
 ;------------;
 
 width = 100%
+{% if yadm.hostname == "g14" %}
 height = 27
+{% endif %}
+{% if yadm.hostname == "surface" %}
+height = 37
+{% endif %}
 offset-x = 0
 offset-y = 0
 
@@ -62,10 +58,18 @@ override-redirect = false
 ; FONTS ;
 ;-------;
 
+{% if yadm.hostname == "g14" %}
 font-0 = FiraCode Nerd Font:style=Regular:size=10;3
-font-1 = FiraCode Nerd Font:style=Bold:size=13;3
-font-2 = FiraCode Nerd Font:style=Regular:size=12;3
+font-1 = FiraCode Nerd Font:style=Bold:size=10;3
+font-2 = FiraCode Nerd Font:style=Regular:size=10;3
 font-3 = Material Icons:style=Regular:size=12;3
+{% endif %}
+{% if yadm.hostname == "surface" %}
+font-0 = FiraCode Nerd Font:style=Regular:size=13;3
+font-1 = FiraCode Nerd Font:style=Bold:size=13;3
+font-2 = FiraCode Nerd Font:style=Regular:size=13;3
+font-3 = Material Icons:style=Regular:size=15;3
+{% endif %}
 
 ;--------;
 ; COLORS ;
@@ -84,7 +88,7 @@ padding-left = 2
 padding-right = 2
 module-margin = 1.5
 
-modules-left = battery pulseaudio-control backlight coretemp cpu
+modules-left = battery pulseaudio-control backlight temperature cpu
 modules-center = i3
 modules-right = clipboard wlan date time
 
@@ -92,56 +96,6 @@ tray-position = right
 tray-detached = false
 
 enable-ipc = true
-
-[bar/example]
-;monitor = ${env:MONITOR:HDMI-1}
-width = 100%
-height = 27
-;offset-x = 1%
-;offset-y = 1%
-radius = 6.0
-fixed-center = false
-
-background = ${colors.background}
-foreground = ${colors.foreground}
-
-line-size = 3
-line-color = #f00
-
-border-size = 4
-border-color = #00000000
-
-padding-left = 0
-padding-right = 2
-
-module-margin-left = 1
-module-margin-right = 2
-
-font-0 = fixed:pixelsize=10;1
-font-1 = unifont:fontformat=truetype:size=8:antialias=false;0
-font-2 = siji:pixelsize=10;1
-
-modules-left = bspwm i3
-modules-center = mpd
-modules-right = filesystem xbacklight alsa pulseaudio xkeyboard memory cpu wlan eth battery temperature date powermenu
-
-tray-position = right
-tray-padding = 2
-;tray-background = #0063ff
-
-;wm-restack = bspwm
-;wm-restack = i3
-
-;override-redirect = true
-
-;scroll-up = bspwm-desknext
-;scroll-down = bspwm-deskprev
-
-;scroll-up = i3wm-wsnext
-;scroll-down = i3wm-wsprev
-
-cursor-click = pointer
-cursor-scroll = ns-resize
 
 [module/xwindow]
 type = internal/xwindow
@@ -251,7 +205,12 @@ type = internal/backlight
 
 ; Use the following command to list available cards:
 ; $ ls -1 /sys/class/backlight/
+{% if yadm.hostname == "g14" %}
 card = amdgpu_bl0
+{% endif %}
+{% if yadm.hostname == "surface" %}
+card = intel_backlight
+{% endif %}
 format = <ramp> <label>
 label = %percentage%%
 
@@ -429,8 +388,15 @@ bar-volume-empty-foreground = ${colors.foreground-alt}
 
 [module/battery]
 type = internal/battery
+; Use `ls /sys/class/power_supply` to get the values below
+{% if yadm.hostname == "g14" %}
 battery = BAT0
 adapter = AC0
+{% endif %}
+{% if yadm.hostname == "surface" %}
+battery = BAT1
+adapter = ADP1
+{% endif %}
 full-at = 98
 
 poll-interval = 1
@@ -474,22 +440,31 @@ animation-charging-framerate = 750
 
 [module/temperature]
 type = internal/temperature
-thermal-zone = 0
-warn-temperature = 60
 
-format = <ramp> <label>
+; Thermal zone to use
+; To list all the zone types, run 
+; $ for i in /sys/class/thermal/thermal_zone*; do echo "$i: $(<$i/type)"; done
+; Default: 0
+thermal-zone = 0
+
+warn-temperature = 60
+interval = 2
+
+; Full path of temperature sysfs path
+; Use `sensors` to find preferred temperature source, then run
+; $ for i in /sys/class/hwmon/hwmon*/temp*_input; do echo "$(<$(dirname $i)/name): $(cat ${i%_*}_label 2>/dev/null || echo $(basename ${i%_*})) $(readlink -f $i)"; done
+; to find path to desired file
+; Default reverts to thermal zone setting
+; hwmon-path = /sys/devices/virtual/thermal/thermal_zone0/hwmon2/temp1_input
+
+format = <label>
 format-underline = #f50a4d
-format-warn = <ramp> <label-warn>
+format-warn = <label-warn>
 format-warn-underline = ${self.format-underline}
 
 label = %temperature-c%
 label-warn = %temperature-c%
 label-warn-foreground = ${colors.secondary}
-
-ramp-0 = 
-ramp-1 = 
-ramp-2 = 
-ramp-foreground = ${colors.foreground-alt}
 
 [module/powermenu]
 type = custom/menu

@@ -1,1 +1,5 @@
-.Xresources##hostname.surface
+! DPI setting
+Xft.dpi: 144
+rofi.dpi: 144
+
+Xcursor.theme: macOSBigSur
