@@ -1,5 +1,5 @@
 #!/usr/bin/env sh
 
-yadm add ~/bin ~/.local/share/fonts ~/.local/share/icons ~/.themes
+yadm add ~/bin ~/.local/share/fonts ~/.icons ~/.themes
 yadm commit -am "$(yadm status --porcelain)" || yadm commit -am "GIT_STATUS_TOO_LONG"
 yadm push origin master
