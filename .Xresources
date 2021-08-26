@@ -1,5 +1,5 @@
 ! DPI setting
-Xft.dpi: 120
-rofi.dpi: 120
+Xft.dpi: 144
+rofi.dpi: 144
 
 Xcursor.theme: macOSBigSur
