@@ -1,0 +1,8 @@
+[Desktop Entry]
+Type=Application
+Name=Open in VSCode
+Exec=code %f
+Icon=visual-studio-code
+GenericName=Open current folder in Visual Studio Code
+Terminal=false
+MimeType=inode/directory;
