@@ -156,11 +156,11 @@ export GPG_TTY=$TTY
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
 
 # WSL specific stuff
-if [[ -n "$IS_WSL" || -n "$WSL_DISTRO_NAME" ]]; then
+{% if yadm.os == "WSL" %}
   export WINHOME="/mnt/c/Users/raphp"
   
   alias explorer="explorer.exe"
   alias posh="powershell.exe -nologo"
   alias typora="/mnt/c/Program\ Files/Typora/Typora.exe"
   alias xcopy="clip.exe"
-fi
+{% endif %}
