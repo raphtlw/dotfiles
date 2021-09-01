@@ -155,12 +155,12 @@ export GPG_TTY=$TTY
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
 
-# WSL specific stuff
 {% if yadm.os == "WSL" %}
-  export WINHOME="/mnt/c/Users/raphp"
-  
-  alias explorer="explorer.exe"
-  alias posh="powershell.exe -nologo"
-  alias typora="/mnt/c/Program\ Files/Typora/Typora.exe"
-  alias xcopy="clip.exe"
+# WSL specific stuff
+export WINHOME="/mnt/c/Users/raphp"
+
+alias explorer="explorer.exe"
+alias posh="powershell.exe -nologo"
+alias typora="/mnt/c/Program\ Files/Typora/Typora.exe"
+alias xcopy="clip.exe"
 {% endif %}
