@@ -164,7 +164,7 @@ alias posh="powershell.exe -nologo"
 alias typora="/mnt/c/Program\ Files/Typora/Typora.exe"
 alias xcopy="clip.exe"
 
-pgrep syncthing >/dev/null && {
+pgrep syncthing >/dev/null || {
   echo "Starting Syncthing..."
   syncthing --no-browser >/dev/null 2>&1 &!
   echo "Access Syncthing at http://localhost:8385"
