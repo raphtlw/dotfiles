@@ -147,13 +147,8 @@ export FZF_DEFAULT_OPTS="$FZF_DEFAULT_OPTS"\
 #     xprop -f _KDE_NET_WM_BLUR_BEHIND_REGION 32c -set _KDE_NET_WM_BLUR_BEHIND_REGION 0 -id $wid; done
 # fi
 
-# GPG Stuff
-
 # Fix GPG commit signing
 export GPG_TTY=$TTY
-
-# To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
-[[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
 
 {% if yadm.os == "WSL" %}
 # WSL specific stuff
@@ -170,3 +165,6 @@ pgrep syncthing >/dev/null || {
   echo "Access Syncthing at http://localhost:8385"
 }
 {% endif %}
+
+# To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
+[[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
