@@ -2,4 +2,11 @@ configuration {
   terminal: "i3-sensible-terminal";
   sidebar-mode: false;
   theme: "theme.rasi";
+{% if yadm.hostname == "surface" %}
+  dpi: 144;
+{% endif %}
 }
+
+/*
+vim:ft=css
+*/
