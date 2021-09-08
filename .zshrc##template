@@ -157,7 +157,7 @@ export WINHOME="/mnt/c/Users/raphp"
 alias explorer="explorer.exe"
 alias posh="powershell.exe -nologo"
 alias typora="/mnt/c/Program\ Files/Typora/Typora.exe"
-alias xcopy="clip.exe"
+alias xcopy="clip.exe <"
 
 pgrep syncthing >/dev/null || {
   echo "Starting Syncthing..."
