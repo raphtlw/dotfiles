@@ -35,8 +35,8 @@ exec --no-startup-id xss-lock --transfer-sleep-lock -- ~/bin/lock --nofork
 exec --no-startup-id nm-applet
 
 # Use pactl to adjust volume in PulseAudio.
-bindsym XF86AudioRaiseVolume exec --no-startup-id "pactl set-sink-volume @DEFAULT_SINK@ +5% && notify-send 'volume up'"
-bindsym XF86AudioLowerVolume exec --no-startup-id "pactl set-sink-volume @DEFAULT_SINK@ -5% && notify-send 'volume down'"
+bindsym XF86AudioRaiseVolume exec --no-startup-id "pactl set-sink-volume @DEFAULT_SINK@ +2% && notify-send 'volume up'"
+bindsym XF86AudioLowerVolume exec --no-startup-id "pactl set-sink-volume @DEFAULT_SINK@ -2% && notify-send 'volume down'"
 
 # Brightness controls
 bindsym XF86MonBrightnessUp exec --no-startup-id "brightnessctl s +5%; notify-send 'brightness up'"
