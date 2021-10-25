@@ -197,6 +197,7 @@ let NERDTreeShowHidden = 1
 let g:lsc_auto_map = v:true
 let g:closetag_filenames = '*.html,*.xhtml,*.phtml,*.md,*.svelte'
 let g:coc_disable_startup_warning = 1
+let g:vim_markdown_folding_disabled = 1
 
 " Lightline update
 autocmd BufWritePost,TextChanged,TextChangedI * call lightline#update()
