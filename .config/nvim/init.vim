@@ -159,7 +159,6 @@ let g:which_key_map.l = {
 nmap <silent> <C-b> :NERDTreeToggle<CR>
 nnoremap <silent> b] :bnext<CR>
 nnoremap <silent> b[ :bprev<CR>
-nnoremap <silent> b :b v:count<CR>
 nnoremap <silent> <C-w> :bd<CR>
 nnoremap <silent> <C-s> :w<CR>
 inoremap <silent> <C-s> <Esc> :w<CR>
