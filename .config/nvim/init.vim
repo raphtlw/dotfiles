@@ -21,6 +21,7 @@ Plug 'junegunn/fzf', {'do': {-> fzf#install()}}
 Plug 'junegunn/fzf.vim'
 Plug 'alvan/vim-closetag'
 Plug 'sindrets/diffview.nvim'
+Plug 'liuchengxu/vim-which-key'
 " Language support
 Plug 'iamcco/markdown-preview.nvim', { 'do': { -> mkdp#util#install() }, 'for': ['markdown', 'vim-plug']}
 Plug 'plasticboy/vim-markdown'
@@ -30,7 +31,6 @@ Plug 'pangloss/vim-javascript'
 Plug 'leafgarland/typescript-vim'
 Plug 'maxmellon/vim-jsx-pretty'
 Plug 'alampros/vim-styled-jsx'
-Plug 'liuchengxu/vim-which-key'
 " Theme
 Plug 'ntk148v/vim-horizon'
 
@@ -45,7 +45,8 @@ let g:coc_global_extensions = [
   \'coc-emmet',
   \'coc-tsserver',
   \'coc-prettier',
-  \'coc-pyright'
+  \'coc-pyright',
+  \'coc-discord-rpc',
   \]
 
 " Settings
@@ -85,7 +86,7 @@ execute "set t_9f=\e[38;2;%lu;%lu;%lum"
 execute "set t_8b=\e[48;2;%lu;%lu;%lum"
 
 " Which Key
-call which_key#register('<Space>', "g:which_key_map")
+call which_key#register('<Leader>', "g:which_key_map")
 
 " Define prefix dictionary
 let g:which_key_map =  {}
@@ -158,6 +159,7 @@ let g:which_key_map.l = {
 nmap <silent> <C-b> :NERDTreeToggle<CR>
 nnoremap <silent> b] :bnext<CR>
 nnoremap <silent> b[ :bprev<CR>
+nnoremap <silent> b :b v:count<CR>
 nnoremap <silent> <C-w> :bd<CR>
 nnoremap <silent> <C-s> :w<CR>
 inoremap <silent> <C-s> <Esc> :w<CR>
@@ -175,8 +177,8 @@ nmap <silent> <c-j> :wincmd j<CR>
 nmap <silent> <c-h> :wincmd h<CR>
 nmap <silent> <c-l> :wincmd l<CR>
 nmap <silent> <Leader>p :Files<CR>
-nnoremap <silent> <leader> :<c-u>WhichKey '<Space>'<CR>
-vnoremap <silent> <leader> :<c-u>WhichKeyVisual '<Space>'<CR>
+nnoremap <silent> <leader> :<c-u>WhichKey '<Leader>'<CR>
+vnoremap <silent> <leader> :<c-u>WhichKeyVisual '<Leader>'<CR>
 
 " Custom commands
 command! Settings :e $MYVIMRC
