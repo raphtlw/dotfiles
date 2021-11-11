@@ -39,8 +39,8 @@ bindsym XF86AudioRaiseVolume exec --no-startup-id "pactl set-sink-volume @DEFAUL
 bindsym XF86AudioLowerVolume exec --no-startup-id "pactl set-sink-volume @DEFAULT_SINK@ -2% && notify-send 'volume down'"
 
 # Brightness controls
-bindsym XF86MonBrightnessUp exec --no-startup-id "brightnessctl s +5%; notify-send 'brightness up'"
-bindsym XF86MonBrightnessDown exec --no-startup-id "brightnessctl s 5%-; notify-send 'brightness down'"
+bindsym XF86MonBrightnessUp exec --no-startup-id "brightnessctl s +2%; notify-send 'brightness up'"
+bindsym XF86MonBrightnessDown exec --no-startup-id "brightnessctl s 2%-; notify-send 'brightness down'"
 
 # Volume mute key
 bindsym XF86AudioMute exec --no-startup-id "pactl set-sink-mute @DEFAULT_SINK@ toggle"
