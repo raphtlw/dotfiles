@@ -45,10 +45,10 @@ function after_op() {
         echo "unknown: $OSTYPE"
       ;;
     esac
-
-    echo "Done"
-    exit 0
   }
+
+  echo "Done"
+  exit 0
 }
 
 # parse params
