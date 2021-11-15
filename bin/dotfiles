@@ -28,6 +28,15 @@ function usage() {
 EOF
 }
 
+
+# CONFIG
+PATHS_TO_ADD=(
+  "~/bin"
+  "~/.fonts"
+  "~/.themes"
+  )
+
+
 function after_op() {
   # will run every end of matched case commands
   shift
@@ -55,7 +64,7 @@ function after_op() {
 if [[ "$#" -gt 0 ]]; then
   case "$1" in
     push)
-      yadm add ~/bin ~/.fonts ~/.icons ~/.themes
+      yadm add ${PATHS_TO_ADD[@]}
       yadm commit -am "$(yadm status --porcelain)" || yadm commit -am "GIT_STATUS_TOO_LONG"
       yadm push origin master
       after_op
