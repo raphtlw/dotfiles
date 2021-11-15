@@ -1,0 +1,74 @@
+#!/usr/bin/env bash
+
+# ----------------------------------------------------------------------------
+# dotfiles: Script for managing dotfiles
+# 
+# Author: Raphael Tang <raphpb1912@gmail.com>
+# ----------------------------------------------------------------------------
+# Dependencies:
+#  - yadm <https://github.com/TheLocehiliosan/yadm>
+
+CLEAR='\033[0m'
+RED='\033[0;31m'
+
+function usage() {
+  if [ -n "$1" ]; then
+    echo -e "${RED}👉 $1${CLEAR}\n";
+  fi
+  
+  cat << EOF
+  Usage: $(basename "$0") [operation]
+    -h, --help     Show this message
+
+    [operation]
+    push           Backup dotfiles to git server
+    pull           Pull dotfiles from git server
+  
+  Examples: $(basename "$0") push
+EOF
+}
+
+function after_op() {
+  # will run every end of matched case commands
+  shift
+  
+  # setup fonts
+  ! [[ -d "$HOME/Library/Fonts" || -d "$HOME/.local/share/fonts" ]] && {
+    case "$OSTYPE" in
+      darwin*)
+        sudo ln -s ~/.fonts ~/Library/Fonts
+      ;;
+      linux*)
+        ln -s ~/.fonts ~/.local/share/fonts
+      ;;
+      *)
+        echo "unknown: $OSTYPE"
+      ;;
+    esac
+
+    echo "Done"
+    exit 0
+  }
+}
+
+# parse params
+if [[ "$#" -gt 0 ]]; then
+  case "$1" in
+    push)
+      yadm add ~/bin ~/.fonts ~/.icons ~/.themes
+      yadm commit -am "$(yadm status --porcelain)" || yadm commit -am "GIT_STATUS_TOO_LONG"
+      yadm push origin master
+      after_op
+    ;;
+    pull)
+      yadm pull origin master
+      after_op
+    ;;
+  esac
+else
+  usage; exit 1
+fi
+while [[ "$#" -gt 0 ]]; do case $1 in
+      -h|--help)   usage; exit 0 ;;
+      *)           usage "Unknown parameter passed: $1"; exit 1 ;;
+esac; done
