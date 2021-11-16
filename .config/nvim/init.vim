@@ -22,6 +22,7 @@ Plug 'junegunn/fzf.vim'
 Plug 'alvan/vim-closetag'
 Plug 'sindrets/diffview.nvim'
 Plug 'liuchengxu/vim-which-key'
+Plug 'nvim-lua/plenary.nvim'
 " Language support
 Plug 'iamcco/markdown-preview.nvim', { 'do': { -> mkdp#util#install() }, 'for': ['markdown', 'vim-plug']}
 Plug 'plasticboy/vim-markdown'
