@@ -32,7 +32,7 @@ EOF
 # CONFIG
 PATHS_TO_ADD=(
   "$HOME/bin"
-  "$HOME/.fonts"
+  "$HOME/.local/share/fonts"
   "$HOME/.themes"
   )
 
@@ -45,10 +45,10 @@ function after_op() {
   ! [[ -d "$HOME/Library/Fonts" || -d "$HOME/.local/share/fonts" ]] && {
     case "$OSTYPE" in
       darwin*)
-        sudo ln -s ~/.fonts ~/Library/Fonts
+        mv ~/.local/share/fonts/* ~/Library/Fonts/
       ;;
       linux*)
-        ln -s ~/.fonts ~/.local/share/fonts
+        echo "Nothing to do for fonts"
       ;;
       *)
         echo "unknown: $OSTYPE"
