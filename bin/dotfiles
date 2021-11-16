@@ -45,6 +45,7 @@ function after_op() {
   ! [[ -d "$HOME/Library/Fonts" || -d "$HOME/.local/share/fonts" ]] && {
     case "$OSTYPE" in
       darwin*)
+        mkdir -p ~/Library/Fonts/
         mv ~/.local/share/fonts/* ~/Library/Fonts/
       ;;
       linux*)
