@@ -18,6 +18,7 @@ export PATH="$HOME/.deno/bin/deno:$PATH"
 export PATH="$HOME/.local/bin:$PATH"
 export PATH="$PYENV_ROOT/bin:$PATH"
 export PATH="/opt/homebrew/bin:$PATH"
+export PATH="/opt/homebrew/opt/mysql-client/bin:$PATH"
 
 # The next line updates PATH for the Google Cloud SDK.
 [ -f "$HOME/google-cloud-sdk/path.zsh.inc" ] && . "$HOME/google-cloud-sdk/path.zsh.inc"
