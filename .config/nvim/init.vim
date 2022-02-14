@@ -13,16 +13,16 @@ Plug 'neoclide/coc.nvim', {'branch': 'release'}
 Plug 'jiangmiao/auto-pairs'
 Plug 'itchyny/lightline.vim'
 Plug 'preservim/nerdtree'
-Plug 'preservim/nerdcommenter'
-Plug 'mengelbrecht/lightline-bufferline'
+" Plug 'mengelbrecht/lightline-bufferline'
 Plug 'Xuyuanp/nerdtree-git-plugin'
 Plug 'kyazdani42/nvim-web-devicons'
 Plug 'junegunn/fzf', {'do': {-> fzf#install()}}
 Plug 'junegunn/fzf.vim'
 Plug 'alvan/vim-closetag'
+Plug 'nvim-lua/plenary.nvim'
 Plug 'sindrets/diffview.nvim'
 Plug 'liuchengxu/vim-which-key'
-Plug 'nvim-lua/plenary.nvim'
+Plug 'romgrk/barbar.nvim'
 " Language support
 Plug 'iamcco/markdown-preview.nvim', { 'do': { -> mkdp#util#install() }, 'for': ['markdown', 'vim-plug']}
 Plug 'plasticboy/vim-markdown'
@@ -32,8 +32,10 @@ Plug 'pangloss/vim-javascript'
 Plug 'leafgarland/typescript-vim'
 Plug 'maxmellon/vim-jsx-pretty'
 Plug 'alampros/vim-styled-jsx'
+Plug 'keith/swift.vim'
 " Theme
 Plug 'ntk148v/vim-horizon'
+Plug 'wojciechkepka/vim-github-dark'
 
 call plug#end()
 
@@ -47,7 +49,6 @@ let g:coc_global_extensions = [
   \'coc-tsserver',
   \'coc-prettier',
   \'coc-pyright',
-  \'coc-discord-rpc',
   \]
 
 " Settings
@@ -65,6 +66,7 @@ set noshowmode
 set nowrap
 set cursorline
 set autoindent
+set so=999
 filetype plugin on
 filetype plugin indent on
 autocmd BufRead,BufNewFile *.md setlocal spell wrap linebreak
@@ -82,117 +84,50 @@ set guifont=FiraCode\ Nerd\ Font:h21
 
 " color stuff
 set termguicolors
-colorscheme horizon
+colorscheme ghdark
 execute "set t_9f=\e[38;2;%lu;%lu;%lum"
 execute "set t_8b=\e[48;2;%lu;%lu;%lum"
 
-" Which Key
-call which_key#register('<Leader>', "g:which_key_map")
-
-" Define prefix dictionary
-let g:which_key_map =  {}
-
-" Second level dictionaries:
-" 'name' is a special field. It will define the name of the group, e.g., leader-f is the "+file" group.
-" Unnamed groups will show a default empty string.
-
-" =======================================================
-" Create menus based on existing mappings
-" =======================================================
-" You can pass a descriptive text to an existing mapping.
-
-let g:which_key_map.f = { 'name' : '+file' }
-
-nnoremap <silent> <leader>fs :update<CR>
-let g:which_key_map.f.s = 'save-file'
-
-nnoremap <silent> <leader>fd :e $MYVIMRC<CR>
-let g:which_key_map.f.d = 'open-vimrc'
-
-nnoremap <silent> <leader>oq  :copen<CR>
-nnoremap <silent> <leader>ol  :lopen<CR>
-let g:which_key_map.o = {
-      \ 'name' : '+open',
-      \ 'q' : 'open-quickfix'    ,
-      \ 'l' : 'open-locationlist',
-      \ }
-
-" =======================================================
-" Create menus not based on existing mappings:
-" =======================================================
-" Provide commands(ex-command, <Plug>/<C-W>/<C-d> mapping, etc.)
-" and descriptions for the existing mappings.
-"
-" Note:
-" Some complicated ex-cmd may not work as expected since they'll be
-" feed into `feedkeys()`, in which case you have to define a decicated
-" Command or function wrapper to make it work with vim-which-key.
-" Ref issue #126, #133 etc.
-let g:which_key_map.b = {
-      \ 'name' : '+buffer' ,
-      \ '1' : ['b1'        , 'buffer 1']        ,
-      \ '2' : ['b3'        , 'buffer 2']        ,
-      \ 'd' : ['bd'        , 'delete-buffer']   ,
-      \ 'f' : ['bfirst'    , 'first-buffer']    ,
-      \ 'h' : ['Startify'  , 'home-buffer']     ,
-      \ 'l' : ['blast'     , 'last-buffer']     ,
-      \ 'n' : ['bnext'     , 'next-buffer']     ,
-      \ 'p' : ['bprevious' , 'previous-buffer'] ,
-      \ '?' : ['Buffers'   , 'fzf-buffer']      ,
-      \ }
-
-let g:which_key_map.l = {
-      \ 'name' : '+lsp',
-      \ 'f' : ['spacevim#lang#util#Format()'          , 'formatting']       ,
-      \ 'r' : ['spacevim#lang#util#FindReferences()'  , 'references']       ,
-      \ 'R' : ['spacevim#lang#util#Rename()'          , 'rename']           ,
-      \ 's' : ['spacevim#lang#util#DocumentSymbol()'  , 'document-symbol']  ,
-      \ 'S' : ['spacevim#lang#util#WorkspaceSymbol()' , 'workspace-symbol'] ,
-      \ 'g' : {
-        \ 'name': '+goto',
-        \ 'd' : ['spacevim#lang#util#Definition()'     , 'definition']      ,
-        \ 't' : ['spacevim#lang#util#TypeDefinition()' , 'type-definition'] ,
-        \ 'i' : ['spacevim#lang#util#Implementation()' , 'implementation']  ,
-        \ },
-      \ }
-
 " Keybindings
-nmap <silent> <C-b> :NERDTreeToggle<CR>
-nnoremap <silent> b] :bnext<CR>
-nnoremap <silent> b[ :bprev<CR>
-nnoremap <silent> <C-w> :bd<CR>
-nnoremap <silent> <C-s> :w<CR>
-inoremap <silent> <C-s> <Esc> :w<CR>
-vnoremap <silent> <C-s> <Esc> :w<CR>
-vnoremap <silent> <C-X> "+x
-vnoremap <silent> <C-C> "+y
-map <silent> <C-V> "+gP
-inoremap <silent> <C-V> <Esc> "+gP<CR>
-nmap <silent> <C-/> <plug>NERDCommenterToggle
-xmap <silent> <C-/> <plug>NERDCommenterToggle
-nnoremap <silent> <C-f> :Rg<CR>
-nnoremap <silent> <C-P> :Commands<CR>
-nmap <silent> <c-k> :wincmd k<CR>
-nmap <silent> <c-j> :wincmd j<CR>
-nmap <silent> <c-h> :wincmd h<CR>
-nmap <silent> <c-l> :wincmd l<CR>
-nmap <silent> <Leader>p :Files<CR>
-nnoremap <silent> <leader> :<c-u>WhichKey '<Leader>'<CR>
-vnoremap <silent> <leader> :<c-u>WhichKeyVisual '<Leader>'<CR>
+nmap     <silent> <C-b>     :NERDTreeToggle<CR>
+nnoremap <silent> <A-,>     :BufferPrevious<CR>
+nnoremap <silent> <A-.>     :BufferNext<CR>
+nnoremap <silent> <A-<>     :BufferMovePrevious<CR>
+nnoremap <silent> <A->>     :BufferMoveNext<CR>
+nnoremap <silent> <A-1>     :BufferGoto 1<CR>
+nnoremap <silent> <A-2>     :BufferGoto 2<CR>
+nnoremap <silent> <A-3>     :BufferGoto 3<CR>
+nnoremap <silent> <A-4>     :BufferGoto 4<CR>
+nnoremap <silent> <A-5>     :BufferGoto 5<CR>
+nnoremap <silent> <A-6>     :BufferGoto 6<CR>
+nnoremap <silent> <A-7>     :BufferGoto 7<CR>
+nnoremap <silent> <A-8>     :BufferGoto 8<CR>
+nnoremap <silent> <A-9>     :BufferLast<CR>
+nnoremap <silent> <A-c>     :BufferClose<CR>
+nnoremap <silent> <C-s>     :w<CR>
+inoremap <silent> <C-s>     <Esc> :w<CR>
+vnoremap <silent> <C-s>     <Esc> :w<CR>
+vnoremap <silent> <C-X>     "+x
+vnoremap <silent> <C-C>     "+y
+nmap     <silent> <C-/>     <plug>NERDCommenterToggle
+xmap     <silent> <C-/>     <plug>NERDCommenterToggle
+nnoremap <silent> <C-f>     :Rg<CR>
+nnoremap <silent> <C-P>     :Commands<CR>
+nmap     <silent> <c-k>     :wincmd k<CR>
+nmap     <silent> <c-j>     :wincmd j<CR>
+nmap     <silent> <c-h>     :wincmd h<CR>
+nmap     <silent> <c-l>     :wincmd l<CR>
+nmap     <silent> <Leader>p :Files<CR>
 
 " Custom commands
 command! Settings :e $MYVIMRC
 command! Reload :so $MYVIMRC
 
 " Plugin Configurations
-let g:lightline                  = {}
-let g:lightline.colorscheme = 'horizon'
-let g:lightline.tabline          = {'left': [['buffers']], 'right': [['close']]}
-let g:lightline.component_expand = {'buffers': 'lightline#bufferline#buffers'}
-let g:lightline.component_type   = {'buffers': 'tabsel'}
-let g:lightline#bufferline#show_number  = 1
-let g:lightline#bufferline#shorten_path = 0
-let g:lightline#bufferline#unnamed      = '[No Name]'
+let g:lightline = {
+      \'colorscheme': 'horizon',
+      \'enable': { 'tabline': 0 },
+      \}
 let NERDTreeShowHidden = 1
 let g:lsc_auto_map = v:true
 let g:closetag_filenames = '*.html,*.xhtml,*.phtml,*.md,*.svelte'
