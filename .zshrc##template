@@ -22,6 +22,9 @@ setopt auto_menu
 setopt auto_cd
 setopt +o nomatch
 
+# Enable vi mode
+bindkey -v
+
 # Autocompletion
 fpath=(~/.zsh $fpath)
 # autoload -Uz compinit

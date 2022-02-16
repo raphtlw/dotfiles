@@ -35,7 +35,7 @@ Plug 'alampros/vim-styled-jsx'
 Plug 'keith/swift.vim'
 " Theme
 Plug 'ntk148v/vim-horizon'
-Plug 'wojciechkepka/vim-github-dark'
+" Plug 'wojciechkepka/vim-github-dark'
 
 call plug#end()
 
@@ -84,7 +84,7 @@ set guifont=FiraCode\ Nerd\ Font:h21
 
 " color stuff
 set termguicolors
-colorscheme ghdark
+colorscheme horizon
 execute "set t_9f=\e[38;2;%lu;%lu;%lum"
 execute "set t_8b=\e[48;2;%lu;%lu;%lum"
 
