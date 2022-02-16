@@ -22,9 +22,6 @@ setopt auto_menu
 setopt auto_cd
 setopt +o nomatch
 
-# Enable vi mode
-bindkey -v
-
 # Autocompletion
 fpath=(~/.zsh $fpath)
 # autoload -Uz compinit
@@ -104,6 +101,7 @@ zinit ice depth=1
 zinit light romkatv/powerlevel10k
 zinit light lukechilds/zsh-better-npm-completion
 zinit light agkozak/zsh-z
+zinit light jeffreytse/zsh-vi-mode
 
 # pyenv
 if (( $+commands[pyenv] )); then
