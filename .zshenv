@@ -21,10 +21,10 @@ export PATH="/opt/homebrew/bin:$PATH"
 export PATH="/opt/homebrew/opt/mysql-client/bin:$PATH"
 
 # The next line updates PATH for the Google Cloud SDK.
-[ -f "$HOME/google-cloud-sdk/path.zsh.inc" ] && . "$HOME/google-cloud-sdk/path.zsh.inc"
+[ -f "$HOME/.local/share/google-cloud-sdk/path.zsh.inc" ] && . "$HOME/.local/share/google-cloud-sdk/path.zsh.inc"
 
 # The next line enables shell command completion for gcloud.
-[ -f "$HOME/google-cloud-sdk/completion.zsh.inc" ] && . "$HOME/google-cloud-sdk/completion.zsh.inc"
+[ -f "$HOME/.local/share/google-cloud-sdk/completion.zsh.inc" ] && . "$HOME/.local/share/google-cloud-sdk/completion.zsh.inc"
 
 # Load cargo environment variables
 [ -f "$HOME/.cargo/env" ] && . "$HOME/.cargo/env"

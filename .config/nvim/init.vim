@@ -73,14 +73,21 @@ autocmd BufRead,BufNewFile *.md setlocal spell wrap linebreak
 autocmd BufNewFile,BufRead * setlocal formatoptions-=cro
 
 " NeoVide Settings
-let g:neovide_refresh_rate=60
-let g:neovide_transparency=1.0
-let g:neovide_no_idle=v:false
-let g:neovide_fullscreen=v:false
-let g:neovide_cursor_animation_length=0.0
-let g:neovide_cursor_trail_length=0.0
-let g:neovide_cursor_antialiasing=v:true
-set guifont=FiraCode\ Nerd\ Font:h21
+if has("neovide")
+  let g:neovide_refresh_rate=60
+  let g:neovide_transparency=1.0
+  let g:neovide_no_idle=v:false
+  let g:neovide_fullscreen=v:false
+  let g:neovide_cursor_animation_length=0.0
+  let g:neovide_cursor_trail_length=0.0
+  let g:neovide_cursor_antialiasing=v:true
+  set guifont=FiraCode\ Nerd\ Font\ Mono:h21
+endif
+
+" VimR Settings
+if has("gui_vimr")
+  set guifont=FiraCode\ Nerd\ Font\ Mono:h15
+endif
 
 " color stuff
 set termguicolors
