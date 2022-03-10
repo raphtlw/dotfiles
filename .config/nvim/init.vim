@@ -86,7 +86,7 @@ endif
 
 " VimR Settings
 if has("gui_vimr")
-  set guifont=FiraCode\ Nerd\ Font\ Mono:h15
+  set guifont=FiraCode\ Nerd\ Font\ Mono:h14
 endif
 
 " color stuff
@@ -125,10 +125,21 @@ nmap     <silent> <c-j>     :wincmd j<CR>
 nmap     <silent> <c-h>     :wincmd h<CR>
 nmap     <silent> <c-l>     :wincmd l<CR>
 nmap     <silent> <Leader>p :Files<CR>
+inoremap          <C-k>     <C-o>gk
+inoremap          <C-h>     <Left>
+inoremap          <C-l>     <Right>
+inoremap          <C-j>     <C-o>gj
+inoremap          <C-p>     <C-o>gk
+inoremap          <C-n>     <C-o>gj
+inoremap          <C-f>     <Right>
+inoremap          <C-b>     <Left>
+inoremap          <M-f>     <C-o>w
+inoremap          <M-b>     <C-o>b
 
 " Custom commands
-command! Settings :e $MYVIMRC
+command! Config :e $MYVIMRC
 command! Reload :so $MYVIMRC
+command! WhitespaceTrim :%s/\s\+$//e
 
 " Plugin Configurations
 let g:lightline = {
@@ -140,6 +151,7 @@ let g:lsc_auto_map = v:true
 let g:closetag_filenames = '*.html,*.xhtml,*.phtml,*.md,*.svelte'
 let g:coc_disable_startup_warning = 1
 let g:vim_markdown_folding_disabled = 1
+let g:AutoPairsShortcutBackInsert = ''
 
 " Lightline update
 autocmd BufWritePost,TextChanged,TextChangedI * call lightline#update()
@@ -302,4 +314,4 @@ nnoremap <silent> <space>j  :<C-u>CocNext<CR>
 nnoremap <silent> <space>k  :<C-u>CocPrev<CR>
 " Resume latest coc list.
 nnoremap <silent> <space>p  :<C-u>CocListResume<CR>
- 
+
