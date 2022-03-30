@@ -38,5 +38,6 @@ pgrep micSwitch > /dev/null 2>&1 || {
 # Start Mechvibes
 pgrep Mechvibes > /dev/null 2>&1 || {
   open -a Mechvibes
+  osascript -e 'quit app "Mechvibes"'
 }
 

@@ -19,6 +19,7 @@ export PATH="$HOME/.local/bin:$PATH"
 export PATH="$PYENV_ROOT/bin:$PATH"
 export PATH="/opt/homebrew/bin:$PATH"
 export PATH="/opt/homebrew/opt/mysql-client/bin:$PATH"
+export PATH="/opt/homebrew/opt/llvm/bin:$PATH"
 
 # The next line updates PATH for the Google Cloud SDK.
 [ -f "$HOME/.local/share/google-cloud-sdk/path.zsh.inc" ] && . "$HOME/.local/share/google-cloud-sdk/path.zsh.inc"
