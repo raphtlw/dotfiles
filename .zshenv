@@ -32,3 +32,6 @@ export PATH="/opt/homebrew/opt/llvm/bin:$PATH"
 
 # Load pyenv environment variables
 (( $+commands[pyenv] )) && eval "$(pyenv init --path)"
+
+# Include Homebrew installed libraries in LIBRARY_PATH
+export LIBRARY_PATH="$LIBRARY_PATH:/opt/homebrew/lib"
