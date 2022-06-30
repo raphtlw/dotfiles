@@ -2,7 +2,11 @@
 
 # Regular variables
 export EDITOR="code"
+{% if yadm.os == "Darwin" %}
 export BROWSER="open"
+{% else %}
+export BROWSER="brave"
+{% endif %}
 export DENO_INSTALL="$HOME/.deno"
 export PYENV_ROOT="$HOME/.pyenv"
 
