@@ -1,5 +1,4 @@
 #!/bin/bash
-# shellcheck disable=SC2009
 
 # Required parameters:
 # @raycast.schemaVersion 1
