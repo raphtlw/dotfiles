@@ -2,12 +2,12 @@
 
 # Required parameters:
 # @raycast.schemaVersion 1
-# @raycast.title Audio Input
+# @raycast.title Mic Toggle
 # @raycast.mode silent
 
 # Optional parameters:
 # @raycast.icon 🎤
-# @raycast.packageName Toggle Mic
+# @raycast.packageName Audio
 
 # Documentation:
 # @raycast.description Setup programs for audio input
