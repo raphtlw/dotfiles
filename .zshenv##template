@@ -10,6 +10,7 @@ export BROWSER="brave"
 export DENO_INSTALL="$HOME/.deno"
 export BUN_INSTALL="$HOME/.bun"
 export PYENV_ROOT="$HOME/.pyenv"
+export PNPM_HOME="$HOME/Library/pnpm"
 
 # Path variables
 export PATH="$HOME/bin:$PATH"
@@ -27,6 +28,7 @@ export PATH="/opt/homebrew/bin:$PATH"
 export PATH="/opt/homebrew/opt/mysql-client/bin:$PATH"
 export PATH="/opt/homebrew/opt/llvm/bin:$PATH"
 export PATH="$HOME/.local/share/solana/install/active_release/bin:$PATH"
+export PATH="$PNPM_HOME:$PATH"
 
 # The next line updates PATH for the Google Cloud SDK.
 [ -f "$HOME/.local/share/google-cloud-sdk/path.zsh.inc" ] && . "$HOME/.local/share/google-cloud-sdk/path.zsh.inc"
